@@ -1,6 +1,6 @@
 //
 //  AboutSettingsTab.swift
-//  Hangly
+//  DangleBuddy
 //
 
 import AppKit
@@ -90,12 +90,8 @@ struct AboutSettingsTab: View {
                 .font(.caption)
                 .foregroundStyle(.secondary)
 
-            Text("sharancreatedthis")
+            Text("rahulthakurhimachali")
                 .font(.callout.weight(.medium))
-
-            Text("Photography • Film • Design • Code")
-                .font(.caption)
-                .foregroundStyle(.tertiary)
         }
         .accessibilityElement(children: .combine)
     }

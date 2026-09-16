@@ -1,6 +1,6 @@
 //
 //  SettingsViewModel.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Presentation state for the Settings window.
 //

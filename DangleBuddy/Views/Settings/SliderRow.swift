@@ -1,6 +1,6 @@
 //
 //  SliderRow.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Reusable labelled slider used across the Settings tabs.
 //

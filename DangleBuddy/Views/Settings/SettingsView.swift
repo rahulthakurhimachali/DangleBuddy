@@ -1,6 +1,6 @@
 //
 //  SettingsView.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Root of the Settings scene.
 //

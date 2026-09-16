@@ -1,6 +1,6 @@
 //
 //  OverlaySettingsTab.swift
-//  Hangly
+//  DangleBuddy
 //
 
 import SwiftUI

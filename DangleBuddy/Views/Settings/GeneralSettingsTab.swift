@@ -1,6 +1,6 @@
 //
 //  GeneralSettingsTab.swift
-//  Hangly
+//  DangleBuddy
 //
 
 import SwiftUI
@@ -41,7 +41,7 @@ struct GeneralSettingsTab: View {
             }
 
             Section {
-                Toggle("Launch Hangly at login", isOn: $viewModel.launchesAtLogin)
+                Toggle("Launch DangleBuddy at login", isOn: $viewModel.launchesAtLogin)
 
                 if let error = viewModel.launchAtLoginError {
                     Label(error, systemImage: "exclamationmark.triangle.fill")
@@ -51,7 +51,7 @@ struct GeneralSettingsTab: View {
             } header: {
                 Text("Startup")
             } footer: {
-                Text("Hangly runs in the menu bar and has no Dock icon.")
+                Text("DangleBuddy runs in the menu bar and has no Dock icon.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
