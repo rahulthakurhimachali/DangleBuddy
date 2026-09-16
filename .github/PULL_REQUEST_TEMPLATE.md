@@ -11,7 +11,7 @@ correct, this is the section that gets it merged.
 
 ## How it was verified
 
-- [ ] `xcodebuild -project Hangly.xcodeproj -scheme Hangly -configuration Debug test` passes
+- [ ] `xcodebuild -project DangleBuddy.xcodeproj -scheme DangleBuddy -configuration Debug test` passes
 - [ ] `swiftlint` reports zero violations
 - [ ] Checked by hand in a running build
 
