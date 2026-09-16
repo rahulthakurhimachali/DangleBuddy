@@ -1,15 +1,15 @@
-# SwiftLint configuration for Hangly
+# SwiftLint configuration for DangleBuddy
 # Run manually with `swiftlint`, or let the Xcode "SwiftLint" build phase run it.
 
 included:
-  - Hangly
+  - DangleBuddy
   - Tests
 
 excluded:
   - Scripts            # Standalone build-time scripts, not app code.
   - .build
   - DerivedData
-  - Hangly/Assets
+  - DangleBuddy/Assets
 
 disabled_rules:
   - trailing_whitespace # Handled by the editor; noisy in review.

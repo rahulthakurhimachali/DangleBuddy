@@ -24,9 +24,9 @@ xcuserdata/
 
 # Xcode project — the generated project IS committed so a clean checkout builds
 # without XcodeGen. Per-user state inside it is not.
-Hangly.xcodeproj/project.xcworkspace/xcuserdata/
-Hangly.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
-Hangly.xcodeproj/xcuserdata/
+DangleBuddy.xcodeproj/project.xcworkspace/xcuserdata/
+DangleBuddy.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+DangleBuddy.xcodeproj/xcuserdata/
 
 # Coverage and profiling artefacts
 *.profraw
