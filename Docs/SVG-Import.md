@@ -14,7 +14,7 @@ The eleven collection charms are professional SVG assets. `CollectionCharmCatalo
 holds each one's identity, physics, palette, sound and source file name as data,
 and `SVGCharm` pairs that with a `VectorImage` resolved through `SVGArtworkSource`.
 The geometry those charms were first drawn with — and the helpers only it used — is
-gone. The five classics remain vector geometry in code.
+gone.
 
 `VectorImage` wraps an SVG that AppKit keeps as vector data and rasterises it into
 a square of exactly the pixels the renderer needs, at the display's scale and under
@@ -40,7 +40,7 @@ up to fill its target is as sharp as the whole asset would be.
 That split is only for the rope. `artwork()` returns the complete piece, which is
 what the Library, the Studio and the previews show; `hangingArtwork()` returns the
 charm with its beads handed to the rope, and only the overlay asks for it. The
-measurement costs a rasterisation, so this keeps it off the path that draws sixteen
+measurement costs a rasterisation, so this keeps it off the path that draws eleven
 cards at once.
 
 A charm's knot — where the cord stops and the artwork takes over — is measured from

@@ -34,7 +34,6 @@ First public release.
 - Eleven collection charms drawn as SVG: Nazar boncuğu, Hamsa, Nimbu-mirchi,
   Ghanta, Drishti bommai, Pánchángjié, Daruma, Maneki-neko, Horseshoe, Scarab
   and Himmeli.
-- Five geometric classics: Bead, Camera, Star, Heart and Diamond.
 - Each with its own mass, size, sound and palette, feeding straight into the
   solver — a heavy bell hangs steeper than a straw himmeli.
 - Artwork rendered from vector at the display's real pixel density and cached

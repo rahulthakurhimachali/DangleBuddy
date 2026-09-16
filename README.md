@@ -54,8 +54,8 @@ not an ornament, it is a problem.
   the speed you let go at.
 - **Beads on the thread.** The beads above each charm are simulated particles with
   their own size, weight and spacing — they slide as the rope whips and settle back.
-- **Sixteen charms.** Eleven from a hand-drawn collection of protective and lucky
-  charms from around the world, plus five geometric classics.
+- **Eleven charms.** A hand-drawn collection of protective and lucky charms
+  from around the world.
 - **Your own charms.** Drop any PNG, JPEG, WebP or HEIC onto the charm and the
   Studio removes its background, finds the subject, and hangs it on the rope.
 - **Native SwiftUI and AppKit.** Swift 6 with strict concurrency. No frameworks,
@@ -101,7 +101,7 @@ Designed and built by **rahulthakurhimachali**.
 <details>
 <summary>The whole collection</summary>
 
-<img src="Assets/Screenshots/collection-sheet.png" width="760" alt="All sixteen built-in charms">
+<img src="Assets/Screenshots/collection-sheet.png" width="760" alt="All eleven built-in charms">
 
 </details>
 
