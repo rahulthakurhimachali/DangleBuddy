@@ -1,11 +1,11 @@
-# Contributing to Hangly
+# Contributing to DangleBuddy
 
-Thanks for looking. Hangly is a small, opinionated app, and contributions are
+Thanks for looking. DangleBuddy is a small, opinionated app, and contributions are
 genuinely welcome — especially bug reports from Macs I do not have.
 
 ## Before you start
 
-For anything larger than a bug fix, **open an issue first**. Hangly has a fairly
+For anything larger than a bug fix, **open an issue first**. DangleBuddy has a fairly
 specific idea of what it wants to be, and it would be a shame for you to build
 something well that turns out not to fit. A short issue saves that.
 
@@ -15,9 +15,9 @@ multi-display behaviour, and anything that makes the settled CPU cost lower.
 ## Getting set up
 
 ```sh
-git clone https://github.com/sharancreatedthis/Hangly.git
-cd Hangly
-open Hangly.xcodeproj
+git clone https://github.com/rahulthakurhimachali/DangleBuddy.git
+cd DangleBuddy
+open DangleBuddy.xcodeproj
 ```
 
 The project file is committed, so there is no generator or package manager step.
@@ -58,7 +58,7 @@ it, delete it.
 //       several times a second even with the rope asleep.
 ```
 
-**No dependencies.** Hangly links nothing but Apple frameworks, and that is a
+**No dependencies.** DangleBuddy links nothing but Apple frameworks, and that is a
 feature. A pull request that adds a package will be declined unless it removes
 substantially more code than it adds.
 
@@ -80,7 +80,7 @@ effectively banned; see the note in `RopeCanvasView`.
    a bug fix makes both harder to review.
 3. **Check it locally** before pushing:
    ```sh
-   xcodebuild -project Hangly.xcodeproj -scheme Hangly -configuration Debug test
+   xcodebuild -project DangleBuddy.xcodeproj -scheme DangleBuddy -configuration Debug test
    swiftlint
    ```
 4. **Write the commit message for whoever reads it in a year.** A one-line summary
@@ -103,7 +103,7 @@ begins rather than requiring you to cut the file up. To add one:
 1. Drop the SVG into `Assets/Charms/`.
 2. Add an entry to `CollectionCharmCatalog`, including its mass, radius, sound and
    how many of the solid parts at the top are beads.
-3. Add its metadata to `Hangly/Assets/CharmLibrary.json`.
+3. Add its metadata to `DangleBuddy/Assets/CharmLibrary.json`.
 4. Run `./Scripts/sync-charm-assets.sh` then `./Scripts/generate-charm-previews.sh`.
 5. Run the tests — they will tell you by name if the artwork cannot be split the
    way the catalogue claims.
