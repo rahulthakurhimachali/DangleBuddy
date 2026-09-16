@@ -1,6 +1,6 @@
 //
 //  SVGAssetTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import AppKit
@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// The collection's artwork now comes from SVG assets. These tests hold the
 /// contract: every catalogue entry has an asset, missing ones are reported, and

@@ -1,6 +1,6 @@
 //
 //  CustomCharmStoreTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import CoreGraphics
@@ -8,7 +8,7 @@ import Foundation
 import Testing
 import UniformTypeIdentifiers
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// The store against a throwaway directory. Every test leaves the disk as it
 /// found it.
@@ -166,7 +166,7 @@ struct CharmImportTests {
     }
 
     private func makeFixture() throws -> Fixture {
-        let suiteName = "com.hangly.tests.\(UUID().uuidString)"
+        let suiteName = "com.danglebuddy.tests.\(UUID().uuidString)"
         let defaults = try #require(UserDefaults(suiteName: suiteName))
         let directory = try TestImages.temporaryDirectory()
         let store = CustomCharmStore(directory: directory.appending(path: "charms"))

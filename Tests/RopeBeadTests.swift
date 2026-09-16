@@ -1,13 +1,13 @@
 //
 //  RopeBeadTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import CoreGraphics
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// Beads hang on the cord above the charm and are simulated, not painted on.
 ///

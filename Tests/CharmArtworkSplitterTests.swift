@@ -1,13 +1,13 @@
 //
 //  CharmArtworkSplitterTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import CoreGraphics
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// The artwork is one picture; the overlay needs it as a charm plus its beads.
 ///

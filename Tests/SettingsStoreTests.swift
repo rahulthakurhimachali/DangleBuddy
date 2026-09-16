@@ -1,12 +1,12 @@
 //
 //  SettingsStoreTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// Exercises the real store against a throwaway `UserDefaults` suite, which is only
 /// possible because the suite is injected rather than reached for as a global.
@@ -15,7 +15,7 @@ import Testing
 struct SettingsStoreTests {
     /// A fresh, isolated defaults suite per test.
     private func makeDefaults() throws -> (UserDefaults, String) {
-        let suiteName = "com.hangly.tests.\(UUID().uuidString)"
+        let suiteName = "com.danglebuddy.tests.\(UUID().uuidString)"
         let defaults = try #require(UserDefaults(suiteName: suiteName))
         return (defaults, suiteName)
     }

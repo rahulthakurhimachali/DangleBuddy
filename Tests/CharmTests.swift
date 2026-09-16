@@ -1,13 +1,13 @@
 //
 //  CharmTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import CoreGraphics
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// Charms are pure geometry and numbers, so the whole set can be checked without
 /// rendering anything.
@@ -173,7 +173,7 @@ struct CharmSelectionTests {
     }
 
     private func makeFixture() throws -> Fixture {
-        let suiteName = "com.hangly.tests.\(UUID().uuidString)"
+        let suiteName = "com.danglebuddy.tests.\(UUID().uuidString)"
         let defaults = try #require(UserDefaults(suiteName: suiteName))
         let directory = try TestImages.temporaryDirectory()
         let store = SettingsStore(defaults: defaults, storageKey: "settings")

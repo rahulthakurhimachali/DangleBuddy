@@ -1,13 +1,13 @@
 //
 //  CharmLibraryTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import AppKit
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// The metadata document is the Library's source of words, so its agreement with
 /// the code — every kind present, names matching, categories real — is asserted.
@@ -93,7 +93,7 @@ struct CharmLibraryViewModelTests {
     }
 
     private func makeFixture() throws -> Fixture {
-        let suiteName = "com.hangly.tests.\(UUID().uuidString)"
+        let suiteName = "com.danglebuddy.tests.\(UUID().uuidString)"
         let defaults = try #require(UserDefaults(suiteName: suiteName))
         let directory = try TestImages.temporaryDirectory()
         let manager = CharmManager(

@@ -1,12 +1,12 @@
 //
 //  SettingsCodingTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// The settings document is written to disk, so it must survive being written by a
 /// different build of the app. These tests pin the tolerant-decoding behaviour.

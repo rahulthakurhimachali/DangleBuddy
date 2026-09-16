@@ -1,13 +1,13 @@
 //
 //  RopeSimulationTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import CoreGraphics
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// Exercises the solver directly. The rope is AppKit-free, so every claim about it
 /// can be checked numerically rather than by watching the screen.

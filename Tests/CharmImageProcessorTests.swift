@@ -1,6 +1,6 @@
 //
 //  CharmImageProcessorTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import CoreGraphics
@@ -8,7 +8,7 @@ import Foundation
 import Testing
 import UniformTypeIdentifiers
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// The pipeline is a chain of pure functions over pixels, so each link is checked
 /// on synthetic images whose correct answer is known exactly.

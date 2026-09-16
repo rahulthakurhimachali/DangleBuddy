@@ -1,6 +1,6 @@
 //
 //  CharmStudioTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import CoreGraphics
@@ -9,7 +9,7 @@ import ImageIO
 import Testing
 import UniformTypeIdentifiers
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// The Studio's pipeline stages on synthetic images with known answers.
 @Suite("Studio pipeline")
@@ -177,7 +177,7 @@ struct CharmStudioViewModelTests {
     }
 
     private func makeFixture() throws -> Fixture {
-        let suiteName = "com.hangly.tests.\(UUID().uuidString)"
+        let suiteName = "com.danglebuddy.tests.\(UUID().uuidString)"
         let defaults = try #require(UserDefaults(suiteName: suiteName))
         let directory = try TestImages.temporaryDirectory()
         let store = CustomCharmStore(directory: directory.appending(path: "charms"))

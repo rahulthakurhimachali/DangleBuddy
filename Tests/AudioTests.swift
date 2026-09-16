@@ -1,12 +1,12 @@
 //
 //  AudioTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// The sounds are synthesized, so their shape can be asserted exactly.
 @Suite("Sound synthesis")
@@ -87,7 +87,7 @@ struct CharmSoundTests {
 
     @Test("Sounds are off when the setting is off, and the engine never starts")
     func disabledIsSilent() throws {
-        let suite = "com.hangly.tests.\(UUID().uuidString)"
+        let suite = "com.danglebuddy.tests.\(UUID().uuidString)"
         let defaults = try #require(UserDefaults(suiteName: suite))
         defer { defaults.removePersistentDomain(forName: suite) }
         let store = SettingsStore(defaults: defaults, storageKey: "settings")
@@ -102,7 +102,7 @@ struct CharmSoundTests {
 
     @Test("Zero volume plays nothing either")
     func zeroVolumeIsSilent() throws {
-        let suite = "com.hangly.tests.\(UUID().uuidString)"
+        let suite = "com.danglebuddy.tests.\(UUID().uuidString)"
         let defaults = try #require(UserDefaults(suiteName: suite))
         defer { defaults.removePersistentDomain(forName: suite) }
         let store = SettingsStore(defaults: defaults, storageKey: "settings")

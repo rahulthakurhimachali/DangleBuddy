@@ -1,12 +1,12 @@
 //
 //  ScreenPlacementTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import CoreGraphics
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// `ScreenPlacement` is pure geometry, so the anchoring rules can be verified
 /// exactly — no display, no window server, no timing.

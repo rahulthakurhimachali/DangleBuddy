@@ -1,12 +1,12 @@
 //
 //  LaunchAtLoginPolicyTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// The app ships with launch-at-login on, which means the default has to act on the
 /// system exactly once and never again. Getting that wrong in either direction is

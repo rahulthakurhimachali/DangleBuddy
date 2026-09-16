@@ -1,6 +1,6 @@
 //
 //  TestImages.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 //  Synthetic image fixtures, generated rather than checked in.
 //
@@ -74,7 +74,7 @@ enum TestImages {
 
     static func temporaryDirectory() throws -> URL {
         let url = FileManager.default.temporaryDirectory
-            .appending(path: "HanglyTests-\(UUID().uuidString)")
+            .appending(path: "DangleBuddyTests-\(UUID().uuidString)")
         try FileManager.default.createDirectory(at: url, withIntermediateDirectories: true)
         return url
     }

@@ -1,12 +1,12 @@
 //
 //  BundleMetadataTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// `AppConstants` reads the bundle for its identity strings, with literal fallbacks
 /// for the test bundle — which has no `Info.plist` of the app's. Those fallbacks are
@@ -19,7 +19,7 @@ struct BundleMetadataTests {
         let url = URL(fileURLWithPath: #filePath)
             .deletingLastPathComponent()
             .deletingLastPathComponent()
-            .appending(path: "Hangly/App/Info.plist")
+            .appending(path: "DangleBuddy/App/Info.plist")
         let data = try Data(contentsOf: url)
         let plist = try PropertyListSerialization.propertyList(from: data, format: nil)
         return try #require(plist as? [String: Any])
@@ -29,7 +29,7 @@ struct BundleMetadataTests {
     func copyrightMatchesInfoPlist() throws {
         let declared = try #require(appInfoPlist()["NSHumanReadableCopyright"] as? String)
 
-        #expect(declared == "Copyright © 2026. sharancreatedthis.")
+        #expect(declared == "Copyright © 2026. rahulthakurhimachali.")
         // Running outside the app bundle, this is the fallback; the point of the test
         // is that the fallback and the plist say the same thing.
         #expect(AppConstants.copyright == declared)

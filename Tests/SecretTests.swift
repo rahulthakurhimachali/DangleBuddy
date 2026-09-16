@@ -1,12 +1,12 @@
 //
 //  SecretTests.swift
-//  HanglyTests
+//  DangleBuddyTests
 //
 
 import Foundation
 import Testing
 
-@testable import Hangly
+@testable import DangleBuddy
 
 /// The About window's secrets. The rare tiers are the point of taking the roll as a
 /// parameter: a one-in-a-thousand outcome is asserted here exactly, not waited for.
@@ -25,7 +25,7 @@ struct SecretTests {
 
         #expect(SecretVault.rare.title == "Achievement Unlocked")
         #expect(SecretVault.rare.message == "You found the rare secret.")
-        #expect(SecretVault.rare.attribution == "– sharancreatedthis")
+        #expect(SecretVault.rare.attribution == "– rahulthakurhimachali")
         #expect(SecretVault.ultraRare.title == "There is no secret.")
         #expect(SecretVault.ultraRare.message == "You just really like clicking buttons.")
     }
