@@ -1,6 +1,6 @@
 //
 //  OverlayWindowController.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Owns the overlay panel's lifetime, placement, configuration and frame clock.
 //
@@ -111,7 +111,7 @@ final class OverlayWindowController {
         viewModel.start()
         updateInteractivity()
 
-        // `orderFrontRegardless` shows the panel without activating Hangly, which
+        // `orderFrontRegardless` shows the panel without activating DangleBuddy, which
         // would otherwise pull focus away from the user's current app.
         panel.orderFrontRegardless()
         if isNew {
@@ -154,13 +154,13 @@ final class OverlayWindowController {
     }
 
     private func position(_ panel: OverlayPanel, using overlay: OverlaySettings) {
-        guard let screen = NSScreen.hanglyPreferred else {
+        guard let screen = NSScreen.dangleBuddyPreferred else {
             Logger.overlay.warning("No screen available; leaving overlay where it is.")
             return
         }
 
         let size = AppConstants.Overlay.baseSize.scaled(by: overlay.scale)
-        let bounds = screen.hanglyPlacementBounds(ignoringMenuBar: overlay.anchorsToScreenEdge)
+        let bounds = screen.dangleBuddyPlacementBounds(ignoringMenuBar: overlay.anchorsToScreenEdge)
 
         let frame = ScreenPlacement.frame(
             for: size,

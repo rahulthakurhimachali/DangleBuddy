@@ -1,6 +1,6 @@
 //
 //  SoundSynthesizer.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Generates the charm sound effects from first principles.
 //

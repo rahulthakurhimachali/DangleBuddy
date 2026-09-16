@@ -1,6 +1,6 @@
 //
 //  ScreenObserver.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Publishes display-configuration changes.
 //

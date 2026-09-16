@@ -1,6 +1,6 @@
 //
 //  CharmLibrary.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Loads the charm metadata document.
 //

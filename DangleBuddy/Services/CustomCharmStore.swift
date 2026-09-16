@@ -1,6 +1,6 @@
 //
 //  CustomCharmStore.swift
-//  Hangly
+//  DangleBuddy
 //
 //  On-disk home for imported charms.
 //
@@ -16,7 +16,7 @@ import OSLog
 /// Layout, under Application Support:
 ///
 /// ```
-/// Hangly/Charms/
+/// DangleBuddy/Charms/
 ///   manifest.json      every entry's name, metrics and palette
 ///   <uuid>.png         the processed, background-removed square bitmap
 /// ```

@@ -1,6 +1,6 @@
 //
 //  LaunchAtLoginService.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Login-item registration via ServiceManagement.
 //
@@ -34,10 +34,10 @@ final class LaunchAtLoginService: LaunchAtLoginManaging {
     func setEnabled(_ enabled: Bool) throws {
         if enabled {
             try SMAppService.mainApp.register()
-            Logger.settings.diagnostic("Registered Hangly as a login item.")
+            Logger.settings.diagnostic("Registered DangleBuddy as a login item.")
         } else {
             try SMAppService.mainApp.unregister()
-            Logger.settings.diagnostic("Unregistered Hangly as a login item.")
+            Logger.settings.diagnostic("Unregistered DangleBuddy as a login item.")
         }
     }
 }

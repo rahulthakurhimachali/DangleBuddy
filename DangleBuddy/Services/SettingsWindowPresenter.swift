@@ -1,6 +1,6 @@
 //
 //  SettingsWindowPresenter.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Opens and focuses the SwiftUI Settings scene from an accessory app.
 //

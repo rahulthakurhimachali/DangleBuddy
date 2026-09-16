@@ -1,6 +1,6 @@
 //
 //  AudioService.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Plays charm sound effects.
 //

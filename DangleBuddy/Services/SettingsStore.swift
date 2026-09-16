@@ -1,6 +1,6 @@
 //
 //  SettingsStore.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Observable, persisted home for `AppSettings`.
 //

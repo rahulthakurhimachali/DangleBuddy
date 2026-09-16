@@ -1,6 +1,6 @@
 //
 //  CharmLibraryPresenter.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Opens and focuses the Charm Library window from an accessory app.
 //

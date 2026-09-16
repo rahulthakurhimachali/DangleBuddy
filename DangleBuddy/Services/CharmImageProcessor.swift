@@ -1,6 +1,6 @@
 //
 //  CharmImageProcessor.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Turns a dropped image file into a charm-ready bitmap.
 //

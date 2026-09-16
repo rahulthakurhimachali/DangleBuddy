@@ -1,6 +1,6 @@
 //
 //  CharmStudioWindowController.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Hosts the Studio in an AppKit window any service can open.
 //

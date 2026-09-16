@@ -1,6 +1,6 @@
 //
 //  CharmImportCoordinator.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The one place an import or deletion is started from.
 //

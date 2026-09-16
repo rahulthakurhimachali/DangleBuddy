@@ -1,6 +1,6 @@
 //
 //  CharmManager.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The charm registry and the current selection.
 //

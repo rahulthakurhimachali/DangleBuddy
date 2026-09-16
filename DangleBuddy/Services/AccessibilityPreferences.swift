@@ -1,6 +1,6 @@
 //
 //  AccessibilityPreferences.swift
-//  Hangly
+//  DangleBuddy
 //
 //  System accessibility settings the overlay respects.
 //

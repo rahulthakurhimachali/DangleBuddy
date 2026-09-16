@@ -1,6 +1,6 @@
 //
 //  CharmStudioPipeline.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The import pipeline as separate, previewable stages.
 //

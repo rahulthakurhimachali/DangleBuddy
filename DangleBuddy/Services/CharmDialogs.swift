@@ -1,6 +1,6 @@
 //
 //  CharmDialogs.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The few standard panels the charm system needs.
 //
@@ -12,7 +12,7 @@ import UniformTypeIdentifiers
 ///
 /// Kept in one AppKit-only type so the view models stay free of `NSAlert` and
 /// `NSOpenPanel`, and so a test can substitute a fake that answers without a
-/// window. As an accessory app Hangly is outside the normal activation order, so
+/// window. As an accessory app DangleBuddy is outside the normal activation order, so
 /// each panel activates the app first or it would open behind the user's work.
 @MainActor
 final class CharmDialogs {
@@ -41,7 +41,7 @@ final class CharmDialogs {
 
         let alert = NSAlert()
         alert.messageText = "Delete “\(name)”?"
-        alert.informativeText = "The charm and its image are removed from Hangly. This cannot be undone."
+        alert.informativeText = "The charm and its image are removed from DangleBuddy. This cannot be undone."
         alert.alertStyle = .warning
         alert.addButton(withTitle: "Delete")
         alert.addButton(withTitle: "Cancel")
