@@ -1,6 +1,6 @@
 //
 //  AppSettings.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Root persisted settings document.
 //

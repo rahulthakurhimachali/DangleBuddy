@@ -1,6 +1,6 @@
 //
 //  OverlaySettings.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Value type describing how the floating overlay should be presented.
 //

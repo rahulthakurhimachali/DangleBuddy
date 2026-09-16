@@ -1,6 +1,6 @@
 //
 //  RopeSnapshot.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Immutable per-frame state handed to the renderer.
 //

@@ -1,6 +1,6 @@
 //
 //  CharmLibraryEntry.swift
-//  Hangly
+//  DangleBuddy
 //
 //  What the metadata document says about a built-in charm.
 //

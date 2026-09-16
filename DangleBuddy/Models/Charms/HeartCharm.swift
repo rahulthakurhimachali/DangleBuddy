@@ -1,6 +1,6 @@
 //
 //  HeartCharm.swift
-//  Hangly
+//  DangleBuddy
 //
 
 import CoreGraphics

@@ -1,6 +1,6 @@
 //
 //  CustomCharm.swift
-//  Hangly
+//  DangleBuddy
 //
 //  An imported image as a charm.
 //

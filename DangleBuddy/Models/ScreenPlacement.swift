@@ -1,6 +1,6 @@
 //
 //  ScreenPlacement.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Pure geometry for positioning the overlay. Deliberately AppKit-free.
 //

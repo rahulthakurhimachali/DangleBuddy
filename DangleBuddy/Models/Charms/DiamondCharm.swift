@@ -1,6 +1,6 @@
 //
 //  DiamondCharm.swift
-//  Hangly
+//  DangleBuddy
 //
 
 import CoreGraphics

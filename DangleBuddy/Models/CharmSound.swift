@@ -1,6 +1,6 @@
 //
 //  CharmSound.swift
-//  Hangly
+//  DangleBuddy
 //
 //  What a charm sounds like when it moves.
 //

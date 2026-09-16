@@ -1,6 +1,6 @@
 //
 //  StudioAdjustments.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Everything the user can change about an import in the Studio.
 //

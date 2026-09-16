@@ -1,8 +1,8 @@
 //
 //  CollectionCharmCatalog.swift
-//  Hangly
+//  DangleBuddy
 //
-//  The Hangly collection: identity, physics and sound per charm, with the artwork
+//  The DangleBuddy collection: identity, physics and sound per charm, with the artwork
 //  supplied as SVG.
 //
 

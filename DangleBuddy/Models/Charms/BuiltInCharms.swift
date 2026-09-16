@@ -1,11 +1,11 @@
 //
 //  BuiltInCharms.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The shipped charm set.
 //
 
-/// Every built-in charm, in menu order: the Hangly collection, then the classics.
+/// Every built-in charm, in menu order: the DangleBuddy collection, then the classics.
 ///
 /// The collection leads because it is what the app is for; the classics are plain
 /// shapes and sit underneath it. The collection is drawn from SVG assets resolved

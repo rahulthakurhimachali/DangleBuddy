@@ -1,6 +1,6 @@
 //
 //  CameraCharm.swift
-//  Hangly
+//  DangleBuddy
 //
 
 import CoreGraphics

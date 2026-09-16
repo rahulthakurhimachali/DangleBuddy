@@ -1,6 +1,6 @@
 //
 //  OverlayAnchor.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Where the overlay is pinned inside its screen.
 //

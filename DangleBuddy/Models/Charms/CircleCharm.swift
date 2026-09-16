@@ -1,6 +1,6 @@
 //
 //  CircleCharm.swift
-//  Hangly
+//  DangleBuddy
 //
 
 import CoreGraphics

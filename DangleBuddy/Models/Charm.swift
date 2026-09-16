@@ -1,6 +1,6 @@
 //
 //  Charm.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The charm abstraction: what hangs on the end of the rope.
 //
@@ -17,7 +17,7 @@ enum CharmKind: String, CaseIterable, Codable, Sendable, Identifiable {
     case heart
     case diamond
 
-    // The Hangly collection.
+    // The DangleBuddy collection.
     case nazar
     case hamsa
     case nimbuMirchi

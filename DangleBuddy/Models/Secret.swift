@@ -1,6 +1,6 @@
 //
 //  Secret.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The things the About window will tell you if you ask it enough times.
 //
@@ -49,7 +49,7 @@ struct SecretVault: Equatable {
     static let rare = Secret(
         title: "Achievement Unlocked",
         message: "You found the rare secret.",
-        attribution: "– sharancreatedthis",
+        attribution: "– rahulthakurhimachali",
         rarity: .rare
     )
 

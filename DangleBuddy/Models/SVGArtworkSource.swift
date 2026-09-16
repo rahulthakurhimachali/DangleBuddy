@@ -1,6 +1,6 @@
 //
 //  SVGArtworkSource.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Resolves a charm to its SVG asset, and reports the ones that are missing.
 //
@@ -21,7 +21,7 @@ struct SVGArtworkSource: Sendable {
     }
 
     /// Set to a folder of SVGs to bypass the asset catalog.
-    static let environmentKey = "HANGLY_CHARM_SVG_DIR"
+    static let environmentKey = "DANGLEBUDDY_CHARM_SVG_DIR"
 
     let backend: Backend
 
@@ -30,7 +30,7 @@ struct SVGArtworkSource: Sendable {
     /// Production ignores the override and only ever reads the bundle: a shipped app
     /// has no business loading its artwork from a path someone can point at it.
     static func resolveDefault() -> SVGArtworkSource {
-        #if !HANGLY_PRODUCTION
+        #if !DANGLEBUDDY_PRODUCTION
         if let path = ProcessInfo.processInfo.environment[environmentKey], !path.isEmpty {
             return SVGArtworkSource(backend: .directory(URL(fileURLWithPath: path)))
         }

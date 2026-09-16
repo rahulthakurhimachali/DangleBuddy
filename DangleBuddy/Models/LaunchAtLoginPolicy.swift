@@ -1,6 +1,6 @@
 //
 //  LaunchAtLoginPolicy.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Who wins when the stored preference and the login item disagree.
 //
