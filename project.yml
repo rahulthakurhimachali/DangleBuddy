@@ -1,6 +1,6 @@
-# XcodeGen spec for Hangly.
+# XcodeGen spec for DangleBuddy.
 #
-# Hangly.xcodeproj is committed, so this file is optional — you only need XcodeGen
+# DangleBuddy.xcodeproj is committed, so this file is optional — you only need XcodeGen
 # if you want to regenerate the project (for example after adding a folder):
 #
 #     brew install xcodegen && xcodegen generate
@@ -8,10 +8,10 @@
 # Keeping the spec in the repo makes build settings reviewable in a diff instead of
 # buried in project.pbxproj.
 
-name: Hangly
+name: DangleBuddy
 
 options:
-  bundleIdPrefix: com.hangly
+  bundleIdPrefix: com.danglebuddy
   createIntermediateGroups: true
   deploymentTarget:
     macOS: "14.0"
@@ -92,7 +92,7 @@ settings:
       ASSETCATALOG_COMPILER_OPTIMIZATION: space
       # Compiles out the development overlay, diagnostic logging, the artwork
       # override and every other path that exists only for development.
-      SWIFT_ACTIVE_COMPILATION_CONDITIONS: HANGLY_PRODUCTION
+      SWIFT_ACTIVE_COMPILATION_CONDITIONS: DANGLEBUDDY_PRODUCTION
       # Previews generate registration code and metadata into every file that has
       # one. A shipped binary has no use for it.
       ENABLE_PREVIEWS: NO
@@ -106,29 +106,29 @@ settings:
       ONLY_ACTIVE_ARCH: NO
 
 targets:
-  Hangly:
+  DangleBuddy:
     type: application
     platform: macOS
     sources:
-      - path: Hangly
+      - path: DangleBuddy
         excludes:
           - "App/Info.plist"
-          - "App/Hangly.entitlements"
+          - "App/DangleBuddy.entitlements"
       # Referenced for navigator visibility, but not copied into Resources.
-      - path: Hangly/App/Info.plist
+      - path: DangleBuddy/App/Info.plist
         buildPhase: none
-      - path: Hangly/App/Hangly.entitlements
+      - path: DangleBuddy/App/DangleBuddy.entitlements
         buildPhase: none
     settings:
       base:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        CODE_SIGN_ENTITLEMENTS: Hangly/App/Hangly.entitlements
+        CODE_SIGN_ENTITLEMENTS: DangleBuddy/App/DangleBuddy.entitlements
         COMBINE_HIDPI_IMAGES: YES
         GENERATE_INFOPLIST_FILE: NO
-        INFOPLIST_FILE: Hangly/App/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.hangly.Hangly
-        PRODUCT_NAME: Hangly
+        INFOPLIST_FILE: DangleBuddy/App/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.danglebuddy.app
+        PRODUCT_NAME: DangleBuddy
         SWIFT_EMIT_LOC_STRINGS: YES
       configs:
         Debug:
@@ -150,31 +150,31 @@ targets:
             echo "warning: SwiftLint not installed. Install it with: brew install swiftlint"
           fi
 
-  HanglyTests:
+  DangleBuddyTests:
     type: bundle.unit-test
     platform: macOS
     sources:
       - path: Tests
     dependencies:
-      - target: Hangly
+      - target: DangleBuddy
     settings:
       base:
         GENERATE_INFOPLIST_FILE: YES
-        PRODUCT_BUNDLE_IDENTIFIER: com.hangly.HanglyTests
+        PRODUCT_BUNDLE_IDENTIFIER: com.danglebuddy.tests
 
 schemes:
-  Hangly:
+  DangleBuddy:
     build:
       targets:
-        Hangly: all
-        HanglyTests: [test]
+        DangleBuddy: all
+        DangleBuddyTests: [test]
     run:
       config: Debug
     test:
       config: Debug
       gatherCoverageData: true
       targets:
-        - HanglyTests
+        - DangleBuddyTests
     profile:
       config: Release
     analyze:
