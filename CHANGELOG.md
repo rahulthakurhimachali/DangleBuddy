@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Hangly are recorded here.
+All notable changes to DangleBuddy are recorded here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -69,4 +69,4 @@ First public release.
 - On macOS 26, large icon sizes are drawn inside the system's icon container,
   which double-frames an icon that has its own rounded background.
 
-[1.0.0]: https://github.com/sharancreatedthis/Hangly/releases/tag/v1.0.0
+[1.0.0]: https://github.com/rahulthakurhimachali/DangleBuddy/releases/tag/v1.0.0
