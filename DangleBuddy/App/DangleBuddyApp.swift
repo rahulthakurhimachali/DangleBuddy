@@ -1,18 +1,18 @@
 //
-//  HanglyApp.swift
-//  Hangly
+//  DangleBuddyApp.swift
+//  DangleBuddy
 //
 //  Application entry point.
 //
 
 import SwiftUI
 
-/// Hangly's SwiftUI entry point.
+/// DangleBuddy's SwiftUI entry point.
 ///
 /// Two scenes only:
 ///
 /// - `MenuBarExtra` is the app's whole presence. There is no `WindowGroup`, which —
-///   together with `LSUIElement` — is what makes Hangly a true menu bar app with no
+///   together with `LSUIElement` — is what makes DangleBuddy a true menu bar app with no
 ///   Dock icon and no main window.
 /// - `Settings` gives the standard macOS Settings window and its ⌘, shortcut.
 ///
@@ -20,7 +20,7 @@ import SwiftUI
 /// `OverlayWindowController`, because SwiftUI's `Window` scene cannot express a
 /// borderless, non-activating, click-through window pinned above every other app.
 @main
-struct HanglyApp: App {
+struct DangleBuddyApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self)
     private var appDelegate
 

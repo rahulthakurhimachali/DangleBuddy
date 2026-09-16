@@ -1,6 +1,6 @@
 //
 //  AppEnvironment.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Composition root: builds the object graph and owns service lifetimes.
 //
@@ -11,7 +11,7 @@ import OSLog
 /// The application's dependency container.
 ///
 /// Services are constructed once, here, and handed to view models through their
-/// initialisers. There are no singletons anywhere in Hangly, which is what lets a
+/// initialisers. There are no singletons anywhere in DangleBuddy, which is what lets a
 /// test build an `AppEnvironment` with a throwaway `UserDefaults` suite and a fake
 /// login-item manager and exercise the real view models.
 ///
@@ -106,7 +106,7 @@ final class AppEnvironment {
     /// Starts long-lived services. Called once, from `applicationDidFinishLaunching`.
     func bootstrap() {
         reconcileLaunchAtLogin()
-        #if !HANGLY_PRODUCTION
+        #if !DANGLEBUDDY_PRODUCTION
         // Also the only thing at launch that touches the whole charm registry, and
         // so the only thing that pays to load every SVG before the overlay appears.
         reportMissingArtwork()
@@ -126,7 +126,7 @@ final class AppEnvironment {
 
     /// A collection charm without its SVG draws a placeholder bead rather than
     /// nothing; say so in the log, once, so the omission is never silent.
-    #if !HANGLY_PRODUCTION
+    #if !DANGLEBUDDY_PRODUCTION
     private func reportMissingArtwork() {
         let missing = BuiltInCharms.missingArtwork
         guard !missing.isEmpty else { return }
@@ -136,7 +136,7 @@ final class AppEnvironment {
     #endif
 
     /// The login-item registry is the source of truth — a user can remove the item in
-    /// System Settings without Hangly running. Trusting the persisted flag instead
+    /// System Settings without DangleBuddy running. Trusting the persisted flag instead
     /// would leave the Settings toggle showing a state that is no longer real.
     /// Brings the login item and the stored preference into agreement.
     ///

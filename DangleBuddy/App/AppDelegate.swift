@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Hangly
+//  DangleBuddy
 //
 //  AppKit lifecycle hooks that SwiftUI's App protocol does not expose.
 //
@@ -16,11 +16,11 @@ import OSLog
 /// overlay panel is never created before the window server can place it.
 @MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
-    /// The composition root, read by `HanglyApp` when it builds its scenes.
+    /// The composition root, read by `DangleBuddyApp` when it builds its scenes.
     let environment = AppEnvironment()
 
     func applicationDidFinishLaunching(_ notification: Notification) {
-        // `LSUIElement` in Info.plist already makes Hangly an accessory app with no
+        // `LSUIElement` in Info.plist already makes DangleBuddy an accessory app with no
         // Dock icon. Setting the policy again is harmless and keeps the behaviour
         // correct even if the app is launched in a way that bypasses the plist.
         NSApp.setActivationPolicy(.accessory)
