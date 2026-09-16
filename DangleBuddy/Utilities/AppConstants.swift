@@ -1,6 +1,6 @@
 //
 //  AppConstants.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Compile-time configuration that has no business living in a view.
 //
@@ -11,11 +11,11 @@ import Foundation
 /// Namespaced constants. Framework-free on purpose: nothing here imports AppKit or
 /// SwiftUI, so the constants stay usable from tests and from background code.
 enum AppConstants {
-    static let appName = "Hangly"
+    static let appName = "DangleBuddy"
 
     /// The running bundle identifier, with a literal fallback for unit-test bundles.
     static var bundleIdentifier: String {
-        Bundle.main.bundleIdentifier ?? "com.hangly.Hangly"
+        Bundle.main.bundleIdentifier ?? "com.danglebuddy.app"
     }
 
     /// Marketing version, e.g. "1.0.0".
@@ -33,12 +33,12 @@ enum AppConstants {
     /// with what Finder's Get Info shows.
     static var copyright: String {
         Bundle.main.object(forInfoDictionaryKey: "NSHumanReadableCopyright") as? String
-            ?? "Copyright © 2026. sharancreatedthis."
+            ?? "Copyright © 2026. rahulthakurhimachali."
     }
 
     enum Defaults {
         /// Versioned so a future schema change can live alongside the old document.
-        static let settingsStorageKey = "com.hangly.settings.v1"
+        static let settingsStorageKey = "com.danglebuddy.settings.v1"
     }
 
     enum Overlay {
@@ -60,13 +60,13 @@ enum AppConstants {
     ///
     /// Enable with either of:
     ///
-    ///     defaults write com.hangly.Hangly HanglyDebugRope -bool YES
+    ///     defaults write com.danglebuddy.app DangleBuddyDebugRope -bool YES
     ///
-    /// or by adding `-HanglyDebugRope YES` to the scheme's launch arguments.
+    /// or by adding `-DangleBuddyDebugRope YES` to the scheme's launch arguments.
     /// The value is re-read a few times a second, so it takes effect live.
-    #if !HANGLY_PRODUCTION
+    #if !DANGLEBUDDY_PRODUCTION
     enum Debug {
-        static let ropeOverlayKey = "HanglyDebugRope"
+        static let ropeOverlayKey = "DangleBuddyDebugRope"
     }
     #endif
 

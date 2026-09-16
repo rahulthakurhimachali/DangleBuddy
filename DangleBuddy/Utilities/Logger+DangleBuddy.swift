@@ -1,8 +1,8 @@
 //
-//  Logger+Hangly.swift
-//  Hangly
+//  Logger+DangleBuddy.swift
+//  DangleBuddy
 //
-//  Unified-logging categories. Use `log show --predicate 'subsystem == "com.hangly.Hangly"'`.
+//  Unified-logging categories. Use `log show --predicate 'subsystem == "com.danglebuddy.app"'`.
 //
 
 import OSLog
@@ -32,7 +32,7 @@ extension Logger {
     /// `error` or `warning` instead and ships.
     @inline(__always)
     func diagnostic(_ message: @autoclosure () -> String) {
-        #if !HANGLY_PRODUCTION
+        #if !DANGLEBUDDY_PRODUCTION
         // Resolved into a local first: an autoclosure cannot be called from inside
         // an os_log interpolation, which captures what it is given.
         let text = message()

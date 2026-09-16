@@ -1,6 +1,6 @@
 //
 //  UndoStack.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Value-type undo and redo.
 //

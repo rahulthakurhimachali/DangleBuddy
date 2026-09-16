@@ -1,6 +1,6 @@
 //
 //  CGPoint+Vector.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Minimal 2D vector arithmetic for the rope solver.
 //

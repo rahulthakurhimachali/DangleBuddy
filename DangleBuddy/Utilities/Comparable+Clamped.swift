@@ -1,6 +1,6 @@
 //
 //  Comparable+Clamped.swift
-//  Hangly
+//  DangleBuddy
 //
 
 extension Comparable {

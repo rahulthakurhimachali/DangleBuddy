@@ -1,6 +1,6 @@
 //
-//  NSScreen+Hangly.swift
-//  Hangly
+//  NSScreen+DangleBuddy.swift
+//  DangleBuddy
 //
 //  Screen selection for the overlay.
 //
@@ -15,7 +15,7 @@ extension NSScreen {
     /// predictable place. `NSScreen.main` is deliberately *not* used: it follows
     /// keyboard focus, so the overlay would hop between displays as the user moved
     /// between apps. Per-display selection is Phase 2 work.
-    static var hanglyPreferred: NSScreen? {
+    static var dangleBuddyPreferred: NSScreen? {
         NSScreen.screens.first ?? NSScreen.main
     }
 
@@ -23,7 +23,7 @@ extension NSScreen {
     /// - Parameter ignoringMenuBar: When `true`, use the full physical bounds so the
     ///   overlay can hang from the very top edge. When `false`, use `visibleFrame`,
     ///   which starts below the menu bar.
-    func hanglyPlacementBounds(ignoringMenuBar: Bool) -> CGRect {
+    func dangleBuddyPlacementBounds(ignoringMenuBar: Bool) -> CGRect {
         ignoringMenuBar ? frame : visibleFrame
     }
 }

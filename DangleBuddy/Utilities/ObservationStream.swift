@@ -1,6 +1,6 @@
 //
 //  ObservationStream.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Bridges the Observation framework to structured concurrency.
 //

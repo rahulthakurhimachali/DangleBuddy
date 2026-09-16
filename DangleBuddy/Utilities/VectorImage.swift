@@ -1,6 +1,6 @@
 //
 //  VectorImage.swift
-//  Hangly
+//  DangleBuddy
 //
 //  A vector asset rasterised on demand at exact device pixels.
 //
@@ -261,7 +261,7 @@ final class VectorImage: @unchecked Sendable {
         return computed
     }
 
-    #if !HANGLY_PRODUCTION
+    #if !DANGLEBUDDY_PRODUCTION
     /// Drops every cached bitmap. Used by tests.
     func purge() {
         lock.lock()

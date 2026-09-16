@@ -1,6 +1,6 @@
 //
-//  CGSize+Hangly.swift
-//  Hangly
+//  CGSize+DangleBuddy.swift
+//  DangleBuddy
 //
 
 import CoreGraphics

@@ -1,6 +1,6 @@
 //
 //  RGBABitmap.swift
-//  Hangly
+//  DangleBuddy
 //
 //  A small CPU pixel buffer for the image-import pipeline.
 //

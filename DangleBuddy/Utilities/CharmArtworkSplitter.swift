@@ -1,6 +1,6 @@
 //
 //  CharmArtworkSplitter.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Separates a charm's body from the beads threaded above it.
 //
