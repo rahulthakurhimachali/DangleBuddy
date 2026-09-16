@@ -67,7 +67,7 @@ final class CharmLibraryViewModel {
     var allItems: [CharmLibraryItem] {
         let builtIns = library.entries.map { entry in
             CharmLibraryItem(
-                id: .builtIn(entry.kind ?? .circle),
+                id: .builtIn(entry.kind ?? BuiltInCharms.fallbackKind),
                 name: entry.name,
                 region: entry.region,
                 description: entry.description,

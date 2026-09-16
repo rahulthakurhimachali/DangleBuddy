@@ -3,8 +3,7 @@
   "categories": [
     { "id": "protection", "name": "Protection" },
     { "id": "luck", "name": "Luck & Fortune" },
-    { "id": "ritual", "name": "Ritual & Home" },
-    { "id": "classic", "name": "Classic" }
+    { "id": "ritual", "name": "Ritual & Home" }
   ],
   "charms": [
     {
@@ -105,51 +104,6 @@
       "description": "A geometric mobile of rye straw hung above the table at midwinter in Finland to bless the coming harvest. The name comes from the Swedish word for sky.",
       "tags": ["straw", "geometric", "mobile", "midwinter", "harvest", "gold"],
       "previewImage": "charm-preview-himmeli"
-    },
-    {
-      "id": "circle",
-      "name": "Bead",
-      "region": "Universal",
-      "category": "classic",
-      "description": "A plain glass bead, the charm DangleBuddy ships with. Simple, weighty and never out of place.",
-      "tags": ["bead", "simple", "default", "violet"],
-      "previewImage": "charm-preview-circle"
-    },
-    {
-      "id": "star",
-      "name": "Star",
-      "region": "Universal",
-      "category": "classic",
-      "description": "Everyone's first lucky charm. The lightest in the set, so it swings the fastest.",
-      "tags": ["star", "gold", "light", "wish"],
-      "previewImage": "charm-preview-star"
-    },
-    {
-      "id": "heart",
-      "name": "Heart",
-      "region": "Universal",
-      "category": "classic",
-      "description": "Worn on the sleeve, or in this case at the top of the screen.",
-      "tags": ["heart", "red", "love"],
-      "previewImage": "charm-preview-heart"
-    },
-    {
-      "id": "diamond",
-      "name": "Diamond",
-      "region": "Universal",
-      "category": "classic",
-      "description": "Cut, faceted and indestructible. Heavy enough to hang the rope nearly straight.",
-      "tags": ["gem", "ice", "faceted", "blue"],
-      "previewImage": "charm-preview-diamond"
-    },
-    {
-      "id": "camera",
-      "name": "Camera",
-      "region": "Universal",
-      "category": "classic",
-      "description": "For photographers and the perpetually nostalgic. The heaviest charm in the box.",
-      "tags": ["camera", "photo", "graphite", "heavy"],
-      "previewImage": "charm-preview-camera"
     }
   ]
 }

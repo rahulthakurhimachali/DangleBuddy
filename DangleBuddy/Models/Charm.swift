@@ -10,14 +10,6 @@ import Foundation
 
 /// Identity of a built-in charm.
 enum CharmKind: String, CaseIterable, Codable, Sendable, Identifiable {
-    // The classics.
-    case circle
-    case camera
-    case star
-    case heart
-    case diamond
-
-    // The DangleBuddy collection.
     case nazar
     case hamsa
     case nimbuMirchi
@@ -35,11 +27,6 @@ enum CharmKind: String, CaseIterable, Codable, Sendable, Identifiable {
     /// Must match the `name` in `CharmLibrary.json`; a test enforces it.
     var displayName: String {
         switch self {
-        case .circle: "Bead"
-        case .camera: "Camera"
-        case .star: "Star"
-        case .heart: "Heart"
-        case .diamond: "Diamond"
         case .nazar: "Nazar boncuğu"
         case .hamsa: "Hamsa"
         case .nimbuMirchi: "Nimbu-mirchi"
@@ -57,11 +44,6 @@ enum CharmKind: String, CaseIterable, Codable, Sendable, Identifiable {
     /// SF Symbol used for the menu bar item.
     var symbolName: String {
         switch self {
-        case .circle: "circle.fill"
-        case .camera: "camera.fill"
-        case .star: "star.fill"
-        case .heart: "heart.fill"
-        case .diamond: "diamond.fill"
         case .nazar: "eye.fill"
         case .hamsa: "hand.raised.fill"
         case .nimbuMirchi: "leaf.fill"
@@ -296,6 +278,11 @@ struct CharmArtwork {
     /// Fraction of the square a whole vector asset spans; the rest is margin. A
     /// body region carries its own framing and is drawn without it.
     static let vectorFill = 0.96
+
+    /// Used when vector artwork is missing, so the rope is never bare.
+    static var placeholder: CharmArtwork {
+        CharmArtwork(silhouette: CGPath(ellipseIn: CGRect(x: 0, y: 0, width: 1, height: 1), transform: nil))
+    }
 
     init(silhouette: CGPath, details: [CharmDetail] = []) {
         self.silhouette = silhouette

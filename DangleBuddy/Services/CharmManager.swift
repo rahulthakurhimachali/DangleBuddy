@@ -58,7 +58,7 @@ final class CharmManager {
         settingsStore.update { settings in
             settings.favoriteCharms.subtract(ghosts)
             if selectionIsGhost {
-                settings.overlay.charm = .builtIn(.circle)
+                settings.overlay.charm = .builtIn(BuiltInCharms.fallbackKind)
             }
         }
         let detail = selectionIsGhost ? ", selection reset" : ""
@@ -109,13 +109,13 @@ final class CharmManager {
     }
 
     /// Resolves any identity to a charm. An import that has been deleted or whose
-    /// file has gone falls back to the circle rather than to nothing.
+    /// file has gone falls back to Daruma rather than to nothing.
     func charm(for id: CharmID) -> any Charm {
         switch id {
         case .builtIn(let kind):
             return BuiltInCharms.charm(for: kind)
         case .custom(let uuid):
-            return customStore.charm(for: uuid) ?? CircleCharm()
+            return customStore.charm(for: uuid) ?? BuiltInCharms.fallback
         }
     }
 
@@ -144,13 +144,13 @@ final class CharmManager {
         return entry
     }
 
-    /// Removes an import. If it was on the rope, the circle takes its place.
+    /// Removes an import. If it was on the rope, Daruma takes its place.
     func deleteCharm(id: UUID) throws {
         try customStore.remove(id: id)
         settingsStore.update { settings in
             settings.favoriteCharms.remove(.custom(id))
             if settings.overlay.charm == .custom(id) {
-                settings.overlay.charm = .builtIn(.circle)
+                settings.overlay.charm = .builtIn(BuiltInCharms.fallbackKind)
             }
         }
     }

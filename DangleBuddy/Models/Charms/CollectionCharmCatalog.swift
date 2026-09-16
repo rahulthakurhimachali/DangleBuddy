@@ -78,12 +78,12 @@ struct SVGCharm: BuiltInCharm {
     }
 
     func artwork() -> CharmArtwork {
-        guard let vector else { return CircleCharm().artwork() }
+        guard let vector else { return .placeholder }
         return CharmArtwork(vector: vector)
     }
 
     func hangingArtwork() -> CharmArtwork {
-        guard let vector else { return CircleCharm().artwork() }
+        guard let vector else { return .placeholder }
         guard let regions else { return CharmArtwork(vector: vector) }
         return CharmArtwork(vector: vector, body: regions.body, beads: regions.beads)
     }

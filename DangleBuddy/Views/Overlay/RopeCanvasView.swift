@@ -56,7 +56,7 @@ struct RopeCanvasView: View {
     /// that draws a cord of its own — blended across a change so the whole assembly
     /// reads as one object rather than a charm sitting on a foreign string.
     private var cordPalette: CharmPalette {
-        guard let active = charmLayers.last else { return CircleCharm().palette }
+        guard let active = charmLayers.last else { return BuiltInCharms.fallback.palette }
         let activeTint = active.charm.cordTint ?? active.charm.palette
         guard charmLayers.count > 1, let outgoing = charmLayers.first else {
             return activeTint

@@ -32,7 +32,6 @@
 		32CEE3E26A97B84E3698BA35 /* SVGArtworkSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A631F61943AF0D54B39136E8 /* SVGArtworkSource.swift */; };
 		32D4FEB7F93A4D88DB31E2E2 /* ScreenObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7FA8B870605BA4792B19D /* ScreenObserver.swift */; };
 		32FEB969E145C882EAE6372C /* LaunchAtLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D33A01291DD7E6187CFF8 /* LaunchAtLoginService.swift */; };
-		38D538BC33B0CFEC1345C355 /* CircleCharm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C81A3E6E7CA42F4A3CC2CD /* CircleCharm.swift */; };
 		3B40272A20C4C6788CC07C96 /* LaunchAtLoginPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C4A77D9B6047154B27DAD4 /* LaunchAtLoginPolicy.swift */; };
 		3E518ECD6A82FDE53317013E /* BuiltInCharms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276F1E231923E432DA19770 /* BuiltInCharms.swift */; };
 		3F785DF1BBB9F16F41258488 /* CustomCharmStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E4D56F749445645FE83B8 /* CustomCharmStoreTests.swift */; };
@@ -51,7 +50,6 @@
 		6ACBD258182A4E8407B688F0 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FC3656E603B36D413B962 /* AppConstants.swift */; };
 		6CA54992BE10C911CC29AF13 /* CollectionCharmCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8FCF5F7F102A7AED30732 /* CollectionCharmCatalog.swift */; };
 		6DB3C9579B95A1FEE4276E3E /* PhysicsSimulating.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0488A00F5F5D54992F7AB0 /* PhysicsSimulating.swift */; };
-		70D3E1C62AEC2C3050227619 /* CameraCharm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D356EE39CEC4022CB5CB8A /* CameraCharm.swift */; };
 		729B45A99236F759157CDD81 /* CharmImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BF8BCC002456CA8E264E1 /* CharmImageProcessor.swift */; };
 		732198D7D8BF9EB5BC441B67 /* Charm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C20DD22E0F242DBB285104 /* Charm.swift */; };
 		732224D203E0C41CFB53D67D /* CharmRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EF7397FF41CB752625C68 /* CharmRenderer.swift */; };
@@ -84,7 +82,6 @@
 		B13F2B779279CDBBB7547B2D /* CharmLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C89C8C2602B38EAEC66F9F /* CharmLibrary.swift */; };
 		B162177930780A109B1B9784 /* ObservationStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD124669C9D49C1656CBCBA5 /* ObservationStream.swift */; };
 		B1BE410CE8432DF0CB76437C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF2FB78983CDB3C906787D /* SettingsViewModel.swift */; };
-		BB0951C72C2E55B9E8AD4144 /* HeartCharm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD046B92BFAC050344B32950 /* HeartCharm.swift */; };
 		BB3D3CEFBF0B204FBE56F874 /* OverlayWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B57979E8135B3930D2992EE /* OverlayWindowController.swift */; };
 		BB9D3B6124B06F7B2845D9E8 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4212FED739A38CB3A8265D0B /* AppSettings.swift */; };
 		BBC5435EC9BAE0D8B837F646 /* RopeSimulation+Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C5C8ADC6CD9A463E11533E /* RopeSimulation+Drag.swift */; };
@@ -97,13 +94,11 @@
 		DA5DED4B3E765CDDFE943C67 /* OverlaySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49124AA3C93A33B89E52E7A /* OverlaySettings.swift */; };
 		DAA8AFBC134D890849B46559 /* RopeBeadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5172E0805333D5DC95586 /* RopeBeadTests.swift */; };
 		DD7A7BAC22926C143672B904 /* SecretTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B05BF4BD9031603CB99B495 /* SecretTests.swift */; };
-		DF10B41D09BA85595C8E99CC /* StarCharm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB7A2E2628A8C4F1E283788 /* StarCharm.swift */; };
 		E05EA11F124B3596BD659B9E /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492095A1A1BC0D24ADB757F /* AudioService.swift */; };
 		E0E1C634D72A5219F51DFDE5 /* CharmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3022FFCC0E0FBC6A1704875 /* CharmTests.swift */; };
 		E20EFAB6E733C45A3F7A9A0C /* StudioAdjustments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE5561FBC14F19DD9E6454 /* StudioAdjustments.swift */; };
 		E4D7FE078EE2D571A455CF09 /* ScreenPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D3DD6B74128C7328FC8DB2 /* ScreenPlacement.swift */; };
 		E6A61543D6004A5D14C73B58 /* RopeCanvasView+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F2CE94B27E8F6B7051F74 /* RopeCanvasView+Debug.swift */; };
-		E6EEDD46B37830AB4AD19FC5 /* DiamondCharm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B3A728A722EA557BF7A920 /* DiamondCharm.swift */; };
 		E824B43BD12CE55992C49C19 /* CharmStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A102D0D8FA393F7C517BE /* CharmStudioView.swift */; };
 		E8BE18FD26E76DCCD9974AC7 /* CGPoint+Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B06518684C82BD05E71F41 /* CGPoint+Vector.swift */; };
 		E9F47329AF2DBEA811E9410F /* CharmStudioWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAAFD8B5A5389AFA0C40B68 /* CharmStudioWindowController.swift */; };
@@ -177,9 +172,7 @@
 		474B96FABD20EC5A33D9B740 /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
 		4C42B2FE9A4C59A8829A9A67 /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
 		4E7F11F92BFA8E572995DBFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52C81A3E6E7CA42F4A3CC2CD /* CircleCharm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCharm.swift; sourceTree = "<group>"; };
 		55BA54BC94318916BFA0C32E /* OverlayPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPanel.swift; sourceTree = "<group>"; };
-		55D356EE39CEC4022CB5CB8A /* CameraCharm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCharm.swift; sourceTree = "<group>"; };
 		5723D8A8D5DFA37C618BF4E8 /* AboutSettingsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSettingsTab.swift; sourceTree = "<group>"; };
 		58BE5561FBC14F19DD9E6454 /* StudioAdjustments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioAdjustments.swift; sourceTree = "<group>"; };
 		5AAAFD8B5A5389AFA0C40B68 /* CharmStudioWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmStudioWindowController.swift; sourceTree = "<group>"; };
@@ -192,7 +185,6 @@
 		66445D44F692B6FB82D64286 /* CharmLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmLibraryView.swift; sourceTree = "<group>"; };
 		6C7147EF542117EF306AD134 /* CharmLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmLibraryTests.swift; sourceTree = "<group>"; };
 		6D04C15F1A3C79BA282F51B1 /* CharmSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmSound.swift; sourceTree = "<group>"; };
-		6EB7A2E2628A8C4F1E283788 /* StarCharm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCharm.swift; sourceTree = "<group>"; };
 		6F863357AC2CCF926E9974ED /* GeneralSettingsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsTab.swift; sourceTree = "<group>"; };
 		70F9FADACE54E74006950B28 /* Charm-System.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Charm-System.md"; sourceTree = "<group>"; };
 		71C4A77D9B6047154B27DAD4 /* LaunchAtLoginPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginPolicy.swift; sourceTree = "<group>"; };
@@ -236,7 +228,6 @@
 		C221BB42A8902B2C283D9D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C34BF8BCC002456CA8E264E1 /* CharmImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmImageProcessor.swift; sourceTree = "<group>"; };
 		C36A2A87425229C68D25B0AA /* CharmLibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmLibraryViewModel.swift; sourceTree = "<group>"; };
-		C3B3A728A722EA557BF7A920 /* DiamondCharm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondCharm.swift; sourceTree = "<group>"; };
 		C77EB4ACD720E4BEE0A4D0D5 /* CharmStudioPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmStudioPreviews.swift; sourceTree = "<group>"; };
 		C865760F4CFB8D2E8C55D9F5 /* RopeSimulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopeSimulationTests.swift; sourceTree = "<group>"; };
 		CB5F2CE94B27E8F6B7051F74 /* RopeCanvasView+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RopeCanvasView+Debug.swift"; sourceTree = "<group>"; };
@@ -246,7 +237,6 @@
 		D1C8B9C04AE409F0F4986CEF /* GenerateCharmPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCharmPreviews.swift; sourceTree = "<group>"; };
 		D4462D1040D9EC7D09D156EC /* Architecture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Architecture.md; sourceTree = "<group>"; };
 		D84EBC0BF47E5405D283F376 /* CustomCharmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCharmStore.swift; sourceTree = "<group>"; };
-		DD046B92BFAC050344B32950 /* HeartCharm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartCharm.swift; sourceTree = "<group>"; };
 		DF7FC3656E603B36D413B962 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		E628CEA2AF4309796CB46BD5 /* DangleBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangleBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88F1F5FD5D74357BC2095E5 /* CharmStudioPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmStudioPipeline.swift; sourceTree = "<group>"; };
@@ -483,12 +473,7 @@
 			isa = PBXGroup;
 			children = (
 				3276F1E231923E432DA19770 /* BuiltInCharms.swift */,
-				55D356EE39CEC4022CB5CB8A /* CameraCharm.swift */,
-				52C81A3E6E7CA42F4A3CC2CD /* CircleCharm.swift */,
 				0FE8FCF5F7F102A7AED30732 /* CollectionCharmCatalog.swift */,
-				C3B3A728A722EA557BF7A920 /* DiamondCharm.swift */,
-				DD046B92BFAC050344B32950 /* HeartCharm.swift */,
-				6EB7A2E2628A8C4F1E283788 /* StarCharm.swift */,
 			);
 			path = Charms;
 			sourceTree = "<group>";
@@ -683,7 +668,6 @@
 				3E518ECD6A82FDE53317013E /* BuiltInCharms.swift in Sources */,
 				E8BE18FD26E76DCCD9974AC7 /* CGPoint+Vector.swift in Sources */,
 				9BDE18241803D4BE511AF8FD /* CGSize+DangleBuddy.swift in Sources */,
-				70D3E1C62AEC2C3050227619 /* CameraCharm.swift in Sources */,
 				732198D7D8BF9EB5BC441B67 /* Charm.swift in Sources */,
 				FA600384E0584BF60F17C5EF /* CharmArtworkSplitter.swift in Sources */,
 				0425E8F50E07ECD145191094 /* CharmDetailPane.swift in Sources */,
@@ -709,15 +693,12 @@
 				00A7BA7ACD2543946DB45606 /* CharmStudioViewModel.swift in Sources */,
 				E9F47329AF2DBEA811E9410F /* CharmStudioWindowController.swift in Sources */,
 				41368107D36B0634E9810818 /* CharmView.swift in Sources */,
-				38D538BC33B0CFEC1345C355 /* CircleCharm.swift in Sources */,
 				6CA54992BE10C911CC29AF13 /* CollectionCharmCatalog.swift in Sources */,
 				445CBC755666FC61249551BD /* Comparable+Clamped.swift in Sources */,
 				14B33BFA46E4E2FB0EAA7AC1 /* CustomCharm.swift in Sources */,
 				C3455491BA7D2943209F1B0E /* CustomCharmStore.swift in Sources */,
-				E6EEDD46B37830AB4AD19FC5 /* DiamondCharm.swift in Sources */,
 				06651C20B93E38A4B9BEF4F0 /* GeneralSettingsTab.swift in Sources */,
 				246353EFFEE1468435B9AB66 /* DangleBuddyApp.swift in Sources */,
-				BB0951C72C2E55B9E8AD4144 /* HeartCharm.swift in Sources */,
 				3B40272A20C4C6788CC07C96 /* LaunchAtLoginPolicy.swift in Sources */,
 				32FEB969E145C882EAE6372C /* LaunchAtLoginService.swift in Sources */,
 				66FEEB5AD4D26A6D20E2D956 /* Logger+DangleBuddy.swift in Sources */,
@@ -758,7 +739,6 @@
 				092293A2A907ABDB29F8A9B5 /* SimulationClock.swift in Sources */,
 				8C1E7E8D5DB24E18B89AB51D /* SliderRow.swift in Sources */,
 				A9619A87162D41D4FAD0BE74 /* SoundSynthesizer.swift in Sources */,
-				DF10B41D09BA85595C8E99CC /* StarCharm.swift in Sources */,
 				E20EFAB6E733C45A3F7A9A0C /* StudioAdjustments.swift in Sources */,
 				0FD62A3B9E6759A7DE757776 /* UndoStack.swift in Sources */,
 				17B5E43CE05D58AC6645B3A7 /* VectorImage.swift in Sources */,

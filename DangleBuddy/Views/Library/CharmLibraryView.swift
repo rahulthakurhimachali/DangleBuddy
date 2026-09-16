@@ -111,7 +111,6 @@ struct CharmLibrarySidebar: View {
         case "protection": "shield.lefthalf.filled"
         case "luck": "sparkles"
         case "ritual": "house"
-        case "classic": "circle.hexagongrid"
         default: "tag"
         }
     }

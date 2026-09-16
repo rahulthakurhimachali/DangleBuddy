@@ -5,27 +5,24 @@
 //  The shipped charm set.
 //
 
-/// Every built-in charm, in menu order: the DangleBuddy collection, then the classics.
+/// Every built-in charm, in menu order: the DangleBuddy collection.
 ///
-/// The collection leads because it is what the app is for; the classics are plain
-/// shapes and sit underneath it. The collection is drawn from SVG assets resolved
-/// through `SVGArtworkSource`, the classics from vector geometry in code. A
-/// free-standing lookup rather than a method on a service, so previews, scripts and
-/// tests can resolve a charm without building the whole object graph.
+/// Drawn from SVG assets resolved through `SVGArtworkSource`. A free-standing lookup
+/// rather than a method on a service, so previews, scripts and tests can resolve a
+/// charm without building the whole object graph.
 enum BuiltInCharms {
+    /// What the rope shows when a selection can no longer be resolved.
+    static let fallbackKind = CharmKind.daruma
+
+    static var fallback: any Charm { charm(for: fallbackKind) }
+
     static let all: [any Charm] = CollectionCharmCatalog.charms(
         source: SVGArtworkSource.resolveDefault()
-    ) + [
-        CircleCharm(),
-        CameraCharm(),
-        StarCharm(),
-        HeartCharm(),
-        DiamondCharm()
-    ]
+    )
 
-    /// Falls back to the circle, so an unknown kind can never leave the rope bare.
+    /// Falls back to Daruma, so an unknown kind can never leave the rope bare.
     static func charm(for kind: CharmKind) -> any Charm {
-        all.first { $0.id == .builtIn(kind) } ?? CircleCharm()
+        all.first { $0.id == .builtIn(kind) } ?? fallback
     }
 
     /// Collection charms whose SVG asset could not be found.
