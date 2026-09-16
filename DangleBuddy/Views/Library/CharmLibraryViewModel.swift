@@ -1,6 +1,6 @@
 //
 //  CharmLibraryViewModel.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Presentation state for the Charm Library window.
 //

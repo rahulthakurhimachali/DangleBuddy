@@ -1,6 +1,6 @@
 //
 //  CharmLibraryView.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The Charm Library window.
 //

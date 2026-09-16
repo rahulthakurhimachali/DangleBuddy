@@ -1,6 +1,6 @@
 //
 //  CharmLibraryGrid.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The card grid and a single card.
 //

@@ -1,6 +1,6 @@
 //
 //  CharmDetailPane.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The right-hand pane: whatever is on the rope, large, with its story.
 //
