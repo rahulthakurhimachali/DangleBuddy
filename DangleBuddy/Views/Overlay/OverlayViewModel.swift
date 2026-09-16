@@ -1,6 +1,6 @@
 //
 //  OverlayViewModel.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Presentation state for the overlay content.
 //
@@ -31,7 +31,7 @@ final class OverlayViewModel {
     /// The charm or charms to draw this frame.
     private(set) var charmLayers: [CharmLayer] = []
 
-    #if !HANGLY_PRODUCTION
+    #if !DANGLEBUDDY_PRODUCTION
     /// Whether the debug overlay is drawn. See `AppConstants.Debug`.
     private(set) var isDebugEnabled = false
 
@@ -72,12 +72,12 @@ final class OverlayViewModel {
     private static let soundFullSpeed = 2600.0
 
     @ObservationIgnored private var elapsed: TimeInterval = 0
-    #if !HANGLY_PRODUCTION
+    #if !DANGLEBUDDY_PRODUCTION
     @ObservationIgnored private var nextDebugRefresh: TimeInterval = 0
     @ObservationIgnored private var smoothedFrameRate: Double = 0
     #endif
 
-    #if !HANGLY_PRODUCTION
+    #if !DANGLEBUDDY_PRODUCTION
     /// How often the debug read-out is recomputed, in seconds.
     private static let debugRefreshInterval: TimeInterval = 0.2
     #endif
@@ -174,7 +174,7 @@ final class OverlayViewModel {
             Logger.overlay.diagnostic("Rope \(self.simulation.isSleeping ? "asleep" : "awake").")
         }
 
-        #if !HANGLY_PRODUCTION
+        #if !DANGLEBUDDY_PRODUCTION
         refreshDebugState(deltaTime: deltaTime)
         #endif
     }
@@ -319,7 +319,7 @@ final class OverlayViewModel {
     // Development only. The refresh below reads `UserDefaults` five times a second
     // for as long as the rope is awake, which is not a cost a shipped ornament
     // should carry, so all of it is compiled out of production builds.
-    #if !HANGLY_PRODUCTION
+    #if !DANGLEBUDDY_PRODUCTION
     private func refreshDebugState(deltaTime: TimeInterval) {
         if deltaTime > 0 {
             let instantaneous = 1 / deltaTime
@@ -352,7 +352,7 @@ final class OverlayViewModel {
         let solverHertz = Int((1 / configuration.fixedTimeStep).rounded())
 
         return """
-        HANGLY ROPE DEBUG
+        DANGLEBUDDY ROPE DEBUG
         nodes       \(snapshot.points.count) (\(configuration.segmentCount) segments)
         display     \(Int(smoothedFrameRate.rounded())) fps
         solver      \(simulation.lastStepCount) steps/frame @ \(solverHertz) Hz

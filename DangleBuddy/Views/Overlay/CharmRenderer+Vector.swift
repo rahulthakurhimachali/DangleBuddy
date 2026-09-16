@@ -1,6 +1,6 @@
 //
 //  CharmRenderer+Vector.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Drawing SVG-backed charms and the beads that hang above them.
 //

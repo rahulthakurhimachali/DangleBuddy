@@ -1,6 +1,6 @@
 //
 //  CharmRenderer.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Turns a charm's geometry into pixels.
 //

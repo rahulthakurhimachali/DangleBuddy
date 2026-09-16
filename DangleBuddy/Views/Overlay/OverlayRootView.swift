@@ -1,6 +1,6 @@
 //
 //  OverlayRootView.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Root SwiftUI content hosted inside `OverlayPanel`.
 //
@@ -46,7 +46,7 @@ struct OverlayRootView: View {
             isDropTargeted: viewModel.isDropTargeted,
             importSpinnerAngle: viewModel.importSpinnerAngle
         )
-        #if !HANGLY_PRODUCTION
+        #if !DANGLEBUDDY_PRODUCTION
         view.isDebugEnabled = viewModel.isDebugEnabled
         view.debugSummary = viewModel.debugSummary
         #endif

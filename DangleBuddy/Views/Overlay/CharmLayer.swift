@@ -1,6 +1,6 @@
 //
 //  CharmLayer.swift
-//  Hangly
+//  DangleBuddy
 //
 //  One charm as it should be drawn this frame.
 //

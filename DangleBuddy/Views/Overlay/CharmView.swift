@@ -1,6 +1,6 @@
 //
 //  CharmView.swift
-//  Hangly
+//  DangleBuddy
 //
 //  A single charm, drawn on its own.
 //

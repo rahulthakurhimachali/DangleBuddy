@@ -1,6 +1,6 @@
 //
 //  OverlayPanel.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The transparent, click-through, always-on-top window.
 //
@@ -49,7 +49,7 @@ final class OverlayPanel: NSPanel {
         // make it visibly slide after a display change.
         animationBehavior = .none
 
-        identifier = NSUserInterfaceItemIdentifier("com.hangly.window.overlay")
+        identifier = NSUserInterfaceItemIdentifier("com.danglebuddy.window.overlay")
     }
 
     @available(*, unavailable)

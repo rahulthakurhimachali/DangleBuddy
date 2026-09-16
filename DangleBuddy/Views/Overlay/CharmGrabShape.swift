@@ -1,6 +1,6 @@
 //
 //  CharmGrabShape.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Hit region for grabbing the charm.
 //

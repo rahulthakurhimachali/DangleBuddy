@@ -1,6 +1,6 @@
 //
 //  RopeCanvasView.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Immediate-mode renderer for the simulated rope and its charm.
 //
@@ -20,7 +20,7 @@ import SwiftUI
 struct RopeCanvasView: View {
     let snapshot: RopeSnapshot
     let charmLayers: [CharmLayer]
-    #if !HANGLY_PRODUCTION
+    #if !DANGLEBUDDY_PRODUCTION
     /// Development only. Set by `OverlayRootView`; absent from production builds.
     var isDebugEnabled = false
     var debugSummary = ""
@@ -43,7 +43,7 @@ struct RopeCanvasView: View {
             drawKnot(in: &context)
             drawActivity(in: &context)
 
-            #if !HANGLY_PRODUCTION
+            #if !DANGLEBUDDY_PRODUCTION
             if isDebugEnabled {
                 drawDebugSkeleton(in: &context)
                 drawDebugReadout(in: &context, size: size)

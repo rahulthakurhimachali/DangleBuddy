@@ -1,6 +1,6 @@
 //
 //  RopeCanvasView+Debug.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The developer overlay: every node, every bead, and the numbers behind them.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 // Development only: the whole overlay is compiled out of production builds.
-#if !HANGLY_PRODUCTION
+#if !DANGLEBUDDY_PRODUCTION
 
 /// Drawn only when `AppConstants.Debug.ropeOverlayKey` is set. Kept apart from the
 /// renderer proper so the shipping drawing path stays easy to read.
