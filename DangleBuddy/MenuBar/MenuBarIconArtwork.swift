@@ -1,6 +1,6 @@
 //
 //  MenuBarIconArtwork.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The drawn status item image.
 //

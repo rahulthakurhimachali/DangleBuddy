@@ -1,6 +1,6 @@
 //
 //  MenuBarViewModel.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Presentation state and commands for the menu bar item.
 //

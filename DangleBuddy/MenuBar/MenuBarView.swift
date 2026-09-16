@@ -1,6 +1,6 @@
 //
 //  MenuBarView.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Contents of the menu bar dropdown.
 //

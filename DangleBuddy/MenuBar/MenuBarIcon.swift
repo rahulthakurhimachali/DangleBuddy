@@ -1,6 +1,6 @@
 //
 //  MenuBarIcon.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Status item artwork.
 //
@@ -23,7 +23,7 @@ struct MenuBarIcon: View {
 
     var body: some View {
         Image(nsImage: MenuBarIconArtwork.image(showing: isOverlayVisible))
-            .accessibilityLabel(isOverlayVisible ? "Hangly, overlay visible" : "Hangly, overlay hidden")
+            .accessibilityLabel(isOverlayVisible ? "DangleBuddy, overlay visible" : "DangleBuddy, overlay hidden")
     }
 
     private var isOverlayVisible: Bool {
