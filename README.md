@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="Assets/Icons/hangly-icon-256.png" width="128" alt="Hangly">
+<img src="Assets/Icons/danglebuddy-icon-256.png" width="128" alt="DangleBuddy">
 
-# Hangly
+# DangleBuddy
 
 **A tiny piece of motion for your desktop.**
 
@@ -12,8 +12,8 @@ animation.
 
 <br>
 
-<a href="https://github.com/sharancreatedthis/Hangly/releases/latest/download/Hangly.dmg">
-  <img src="https://img.shields.io/badge/Download%20Hangly-1A38AD?style=for-the-badge&logo=apple&logoColor=white" height="64" alt="Download Hangly for macOS — direct disk image download">
+<a href="https://github.com/rahulthakurhimachali/DangleBuddy/releases/latest/download/DangleBuddy.dmg">
+  <img src="https://img.shields.io/badge/Download%20DangleBuddy-1A38AD?style=for-the-badge&logo=apple&logoColor=white" height="64" alt="Download DangleBuddy for macOS — direct disk image download">
 </a>
 
 <sub>macOS 14 or later · Apple Silicon · 5.2 MB</sub>
@@ -21,7 +21,7 @@ animation.
 <br>
 <br>
 
-[![Build](https://github.com/sharancreatedthis/Hangly/actions/workflows/build.yml/badge.svg)](https://github.com/sharancreatedthis/Hangly/actions/workflows/build.yml)
+[![Build](https://github.com/rahulthakurhimachali/DangleBuddy/actions/workflows/build.yml/badge.svg)](https://github.com/rahulthakurhimachali/DangleBuddy/actions/workflows/build.yml)
 [![Platform](https://img.shields.io/badge/platform-macOS%2014%2B-black)](#requirements)
 [![Swift](https://img.shields.io/badge/Swift-6.0-orange)](https://swift.org)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
@@ -34,7 +34,7 @@ animation.
 
 ## What it is
 
-Hangly puts one small, beautiful object on your screen and then refuses to fake
+DangleBuddy puts one small, beautiful object on your screen and then refuses to fake
 it. The cord is a twenty-segment Verlet rope solved at a fixed 240 Hz. The beads
 threaded above the charm are their own particles, riding the cord. Grab the charm,
 throw it, and the momentum you gave it is the momentum it keeps.
@@ -63,7 +63,7 @@ not an ornament, it is a problem.
 - **Genuinely cheap.** 0.6% of one core and 26 MB when settled, measured on the
   shipped build.
 
-## Why Hangly exists
+## Why DangleBuddy exists
 
 Desktops used to have texture. Not features — texture. A dashboard widget that
 did nothing useful, a dock that bounced with more enthusiasm than the task
@@ -75,7 +75,7 @@ trade. But something goes missing when every pixel is load-bearing: the screen y
 stare at for nine hours a day stops feeling like a place and starts feeling like a
 dashboard.
 
-Hangly is one small argument against that. It does nothing. It is a charm on a
+DangleBuddy is one small argument against that. It does nothing. It is a charm on a
 string, hanging off the top of your screen, obeying gravity. You can flick it on
 the way past and watch it swing while you think.
 
@@ -86,7 +86,7 @@ moving. A real solver, sleeping when it settles and waking when you touch it,
 reads as an object. That is the difference between an ornament on your screen and
 an ornament in your room.
 
-Designed and built by **sharancreatedthis** — photography, film, design, code.
+Designed and built by **rahulthakurhimachali**.
 
 ## Screenshots
 
@@ -96,7 +96,7 @@ Designed and built by **sharancreatedthis** — photography, film, design, code.
 
 | About | The installer |
 |---|---|
-| <img src="Assets/Screenshots/about-window.png" width="360" alt="Hangly's About window"> | <img src="Assets/Screenshots/installer.png" width="360" alt="The Hangly disk image"> |
+| <img src="Assets/Screenshots/about-window.png" width="360" alt="DangleBuddy's About window"> | <img src="Assets/Screenshots/installer.png" width="360" alt="The DangleBuddy disk image"> |
 
 <details>
 <summary>The whole collection</summary>
@@ -110,46 +110,46 @@ Designed and built by **sharancreatedthis** — photography, film, design, code.
 - macOS 14 Sonoma or later
 - Apple Silicon
 
-Hangly is built `arm64`-only. Intel Macs are not supported today; see
+DangleBuddy is built `arm64`-only. Intel Macs are not supported today; see
 [the roadmap](#roadmap).
 
 ## Installation
 
-Download `Hangly.dmg` from [Releases](../../releases), open it, and drag Hangly to
+Download `DangleBuddy.dmg` from [Releases](../../releases), open it, and drag DangleBuddy to
 Applications.
 
-> **The first launch will be refused by Gatekeeper.** Hangly is not yet signed
+> **The first launch will be refused by Gatekeeper.** DangleBuddy is not yet signed
 > with an Apple Developer ID, so macOS will say the developer cannot be verified.
 > Right-click the app and choose **Open**, then confirm — once. This is the honest
 > state of a hobby project without a $99/year membership, not a sign something is
 > wrong. Signing and notarisation are the first item on the roadmap.
 
-Hangly appears in your menu bar. There is no Dock icon and no window — that is
+DangleBuddy appears in your menu bar. There is no Dock icon and no window — that is
 expected. A fresh install adds itself as a login item; turn that off in
 **Settings → General** if you would rather it did not.
 
 ## Building from source
 
 ```sh
-git clone https://github.com/sharancreatedthis/Hangly.git
-cd Hangly
-open Hangly.xcodeproj
+git clone https://github.com/rahulthakurhimachali/DangleBuddy.git
+cd DangleBuddy
+open DangleBuddy.xcodeproj
 ```
 
-Select the **Hangly** scheme and press ⌘R. The project file is committed, so a
+Select the **DangleBuddy** scheme and press ⌘R. The project file is committed, so a
 clean checkout builds with no generator or package manager.
 
 From the command line:
 
 ```sh
-xcodebuild -project Hangly.xcodeproj -scheme Hangly -configuration Debug build
-xcodebuild -project Hangly.xcodeproj -scheme Hangly -configuration Debug test
+xcodebuild -project DangleBuddy.xcodeproj -scheme DangleBuddy -configuration Debug build
+xcodebuild -project DangleBuddy.xcodeproj -scheme DangleBuddy -configuration Debug test
 ```
 
 To build what ships, including the disk image:
 
 ```sh
-./Scripts/build-dmg.sh          # → dist/Hangly.app and dist/Hangly.dmg
+./Scripts/build-dmg.sh          # → dist/DangleBuddy.app and dist/DangleBuddy.dmg
 ```
 
 There are three configurations. **Debug** for development; **Release** for
@@ -186,7 +186,7 @@ Full detail: **[Docs/Physics.md](Docs/Physics.md)**
 ## The SVG charm system
 
 Each collection charm is one hand-drawn SVG: a cord, a few beads, then the charm.
-Hangly takes it apart to hang it — the charm goes on the end of the rope and its
+DangleBuddy takes it apart to hang it — the charm goes on the end of the rope and its
 beads become separate physics particles.
 
 The artwork is never edited. Where the beads end and the charm begins is *measured*
@@ -210,7 +210,7 @@ Measured on the shipped Production build, Apple Silicon, macOS 26:
 | Rope moving | ~15% of one core | 33 MB |
 | Launch → on screen | ~210 ms | — |
 
-The settled figure is the one that matters, because that is where Hangly spends
+The settled figure is the one that matters, because that is where DangleBuddy spends
 almost all of its life. When the rope stops moving the solver stops working, no
 snapshot is published, SwiftUI never invalidates, and the canvas is never asked to
 draw. The moving figure is dominated by the cost of redrawing a transparent window
@@ -224,7 +224,7 @@ bitmaps.
 
 ## Privacy
 
-Hangly collects nothing. Not "anonymised" nothing — nothing.
+DangleBuddy collects nothing. Not "anonymised" nothing — nothing.
 
 - **No telemetry.** No usage reporting, no crash reporting, no phone-home.
 - **No analytics.** Nothing counts what you do.
@@ -238,7 +238,7 @@ What stays on your Mac: your settings, in `~/Library/Preferences`, and any charm
 you import, as image files in the app's own Application Support folder. Both are
 plain files you can inspect or delete. Nothing leaves the machine.
 
-Hangly ships unsandboxed, because a sandboxed app cannot register itself as a
+DangleBuddy ships unsandboxed, because a sandboxed app cannot register itself as a
 login item from an arbitrary location. It requests no privacy-protected resource:
 no camera, no microphone, no location, no contacts, no screen recording, no
 accessibility permissions. You can verify all of this — the source is here.
@@ -283,8 +283,8 @@ test that would fail without them.
 [MIT](LICENSE) for the code.
 
 **The charm artwork is not covered by the MIT licence.** The eleven collection
-SVGs in `Assets/Charms/`, the app icon, and the Hangly name and wordmark are
-© 2026 sharancreatedthis, all rights reserved. You are welcome to build, fork and
+SVGs in `Assets/Charms/`, the app icon, and the DangleBuddy name and wordmark are
+© 2026 rahulthakurhimachali, all rights reserved. You are welcome to build, fork and
 modify the app; please do not redistribute the artwork as your own or ship a
 competing build carrying this branding.
 
@@ -292,8 +292,6 @@ competing build carrying this branding.
 
 <div align="center">
 
-Designed and built by **sharancreatedthis**
-
-Photography • Film • Design • Code
+Designed and built by **rahulthakurhimachali**
 
 </div>
