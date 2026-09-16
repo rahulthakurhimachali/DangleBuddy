@@ -24,7 +24,7 @@
 		1B205DA2CCEC06C41B93CBAF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5F79D924FBEABAEFB54A9 /* SettingsView.swift */; };
 		22D0D980543361B64E017C60 /* CharmDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74458D3FCFEDD88E2FD3D29E /* CharmDialogs.swift */; };
 		2359F664F9F0BA61ADDD94F1 /* CharmStudioPanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA53507AC0763183E131AA09 /* CharmStudioPanels.swift */; };
-		246353EFFEE1468435B9AB66 /* HanglyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232418120D4D4E74B7A644A /* HanglyApp.swift */; };
+		246353EFFEE1468435B9AB66 /* DangleBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232418120D4D4E74B7A644A /* DangleBuddyApp.swift */; };
 		26BF0B5489813AF276D911DA /* ScreenPlacementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30B56FCA500EC3AA59F7EA /* ScreenPlacementTests.swift */; };
 		2CE6D7D647C638A58E914394 /* CharmArtworkSplitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29CBCCDBF3AF36A24B5F16 /* CharmArtworkSplitterTests.swift */; };
 		30BD7684602E23E9E62187E4 /* CharmLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7147EF542117EF306AD134 /* CharmLibraryTests.swift */; };
@@ -47,7 +47,7 @@
 		585B8243B9CFB572094A2392 /* RopeSimulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865760F4CFB8D2E8C55D9F5 /* RopeSimulationTests.swift */; };
 		59766A62E904D12E273E0871 /* CharmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D54F55E252D5819F6103A6 /* CharmManager.swift */; };
 		5B3B14AE173D666A42AD0840 /* OverlayPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BA54BC94318916BFA0C32E /* OverlayPanel.swift */; };
-		66FEEB5AD4D26A6D20E2D956 /* Logger+Hangly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E73DE9A94C895EBD56964 /* Logger+Hangly.swift */; };
+		66FEEB5AD4D26A6D20E2D956 /* Logger+DangleBuddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E73DE9A94C895EBD56964 /* Logger+DangleBuddy.swift */; };
 		6ACBD258182A4E8407B688F0 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FC3656E603B36D413B962 /* AppConstants.swift */; };
 		6CA54992BE10C911CC29AF13 /* CollectionCharmCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8FCF5F7F102A7AED30732 /* CollectionCharmCatalog.swift */; };
 		6DB3C9579B95A1FEE4276E3E /* PhysicsSimulating.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0488A00F5F5D54992F7AB0 /* PhysicsSimulating.swift */; };
@@ -69,7 +69,7 @@
 		8C1E7E8D5DB24E18B89AB51D /* SliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B702F7A74ADDEDF2BAB048 /* SliderRow.swift */; };
 		909F735E7833F63FFE6D3AB1 /* RopeSimulation+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ACE4EAEDE83EF446DA0791 /* RopeSimulation+Snapshot.swift */; };
 		9AB648351BC66E6145E97B45 /* MenuBarIconArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D099CE0A98F120A2194BC45 /* MenuBarIconArtwork.swift */; };
-		9BDE18241803D4BE511AF8FD /* CGSize+Hangly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CE7121BC04028D6B099E1 /* CGSize+Hangly.swift */; };
+		9BDE18241803D4BE511AF8FD /* CGSize+DangleBuddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CE7121BC04028D6B099E1 /* CGSize+DangleBuddy.swift */; };
 		9EC6290A1AD1C2DBFD300783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F11F92BFA8E572995DBFE /* AppDelegate.swift */; };
 		A011A62AC6380BA774AB4734 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC8F3E661977B467E41F9D /* SettingsStore.swift */; };
 		A1B20D9C0E2FE9106C250760 /* CharmSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C15F1A3C79BA282F51B1 /* CharmSound.swift */; };
@@ -79,7 +79,7 @@
 		A6AD9AF335C0036A631DE552 /* RopePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB114CC948300D3108AD198 /* RopePoint.swift */; };
 		A82691615A0FAF773CE1D085 /* MenuBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338B7F387F2730FD69EC5DEE /* MenuBarViewModel.swift */; };
 		A9619A87162D41D4FAD0BE74 /* SoundSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF68365D6005CB12E42C6C3 /* SoundSynthesizer.swift */; };
-		AAABDFF3C08ED62AA649A95C /* NSScreen+Hangly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD7EC212DD64E8059E1C7 /* NSScreen+Hangly.swift */; };
+		AAABDFF3C08ED62AA649A95C /* NSScreen+DangleBuddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD7EC212DD64E8059E1C7 /* NSScreen+DangleBuddy.swift */; };
 		AD4B2F3C062673BF98C34AF2 /* OverlaySettingsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761154CD49B225BFACADBDC4 /* OverlaySettingsTab.swift */; };
 		B13F2B779279CDBBB7547B2D /* CharmLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C89C8C2602B38EAEC66F9F /* CharmLibrary.swift */; };
 		B162177930780A109B1B9784 /* ObservationStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD124669C9D49C1656CBCBA5 /* ObservationStream.swift */; };
@@ -123,7 +123,7 @@
 			containerPortal = 7EBF72B19AB131098FD587B1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8192079002081B0DB9131B93;
-			remoteInfo = Hangly;
+			remoteInfo = DangleBuddy;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -163,14 +163,14 @@
 		37FFC2F4386A3150547D984B /* RopeCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopeCanvasView.swift; sourceTree = "<group>"; };
 		385704456884AF49656DC305 /* OverlayRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayRootView.swift; sourceTree = "<group>"; };
 		39C5C8ADC6CD9A463E11533E /* RopeSimulation+Drag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RopeSimulation+Drag.swift"; sourceTree = "<group>"; };
-		3B2CE7121BC04028D6B099E1 /* CGSize+Hangly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Hangly.swift"; sourceTree = "<group>"; };
-		3F0E73DE9A94C895EBD56964 /* Logger+Hangly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Hangly.swift"; sourceTree = "<group>"; };
+		3B2CE7121BC04028D6B099E1 /* CGSize+DangleBuddy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+DangleBuddy.swift"; sourceTree = "<group>"; };
+		3F0E73DE9A94C895EBD56964 /* Logger+DangleBuddy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+DangleBuddy.swift"; sourceTree = "<group>"; };
 		3FAC8F3E661977B467E41F9D /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		40C5172E0805333D5DC95586 /* RopeBeadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopeBeadTests.swift; sourceTree = "<group>"; };
 		40EE2562C1B455F2EACABE7B /* Physics.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Physics.md; sourceTree = "<group>"; };
 		4212FED739A38CB3A8265D0B /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		421F5153BC1F4C1F55E2AED7 /* CharmImageProcessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmImageProcessorTests.swift; sourceTree = "<group>"; };
-		4232418120D4D4E74B7A644A /* HanglyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanglyApp.swift; sourceTree = "<group>"; };
+		4232418120D4D4E74B7A644A /* DangleBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangleBuddyApp.swift; sourceTree = "<group>"; };
 		436C2A95A4393CA8F4849A01 /* DISTRIBUTION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DISTRIBUTION.md; sourceTree = "<group>"; };
 		4492095A1A1BC0D24ADB757F /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		453622720AA6003E2F854FB5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		5EA16175086B16059F373787 /* SettingsCodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCodingTests.swift; sourceTree = "<group>"; };
 		6019055CAF207EC1DDF8B1A7 /* sync-charm-assets.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "sync-charm-assets.sh"; sourceTree = "<group>"; };
 		60C7D4C4D93985BF135AC827 /* CharmGrabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmGrabShape.swift; sourceTree = "<group>"; };
-		61390805420330776EA2B735 /* Hangly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hangly.entitlements; sourceTree = "<group>"; };
+		61390805420330776EA2B735 /* DangleBuddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DangleBuddy.entitlements; sourceTree = "<group>"; };
 		64EE2A3038AF397AC8C9B70A /* CharmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmView.swift; sourceTree = "<group>"; };
 		66445D44F692B6FB82D64286 /* CharmLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmLibraryView.swift; sourceTree = "<group>"; };
 		6C7147EF542117EF306AD134 /* CharmLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmLibraryTests.swift; sourceTree = "<group>"; };
@@ -228,10 +228,10 @@
 		B658E840826E9E57955495FD /* RopeSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopeSimulation.swift; sourceTree = "<group>"; };
 		B8CFFE68C8A82D073DBFEBB1 /* GenerateDMGBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateDMGBackground.swift; sourceTree = "<group>"; };
 		B919FF04B6C53C9728FFB3ED /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
-		B9F401A66E7F713F9611DB39 /* HanglyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HanglyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F401A66E7F713F9611DB39 /* DangleBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DangleBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0488A00F5F5D54992F7AB0 /* PhysicsSimulating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsSimulating.swift; sourceTree = "<group>"; };
 		BD867762D2DC12F94077735E /* UndoStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoStack.swift; sourceTree = "<group>"; };
-		BFFFD7EC212DD64E8059E1C7 /* NSScreen+Hangly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSScreen+Hangly.swift"; sourceTree = "<group>"; };
+		BFFFD7EC212DD64E8059E1C7 /* NSScreen+DangleBuddy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSScreen+DangleBuddy.swift"; sourceTree = "<group>"; };
 		C0CDA878C06B96E1DF78F12A /* TestImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestImages.swift; sourceTree = "<group>"; };
 		C221BB42A8902B2C283D9D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C34BF8BCC002456CA8E264E1 /* CharmImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmImageProcessor.swift; sourceTree = "<group>"; };
@@ -248,7 +248,7 @@
 		D84EBC0BF47E5405D283F376 /* CustomCharmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCharmStore.swift; sourceTree = "<group>"; };
 		DD046B92BFAC050344B32950 /* HeartCharm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartCharm.swift; sourceTree = "<group>"; };
 		DF7FC3656E603B36D413B962 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
-		E628CEA2AF4309796CB46BD5 /* Hangly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E628CEA2AF4309796CB46BD5 /* DangleBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangleBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88F1F5FD5D74357BC2095E5 /* CharmStudioPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmStudioPipeline.swift; sourceTree = "<group>"; };
 		EA53507AC0763183E131AA09 /* CharmStudioPanels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharmStudioPanels.swift; sourceTree = "<group>"; };
 		EE5FDD96CA08EE0AB078A093 /* AudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTests.swift; sourceTree = "<group>"; };
@@ -346,7 +346,7 @@
 			path = Overlay;
 			sourceTree = "<group>";
 		};
-		81190FD515B47EAB110BEF2F /* Hangly */ = {
+		81190FD515B47EAB110BEF2F /* DangleBuddy */ = {
 			isa = PBXGroup;
 			children = (
 				CF46FA0E4FCAB1337805FC90 /* App */,
@@ -358,7 +358,7 @@
 				CAE12625F0701240C85F1D91 /* Utilities */,
 				5EFBAA70F2B3B7A24A2EC21B /* Views */,
 			);
-			path = Hangly;
+			path = DangleBuddy;
 			sourceTree = "<group>";
 		};
 		81668FE87EDADAFD91CB8078 /* Studio */ = {
@@ -391,7 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				54E0944C512C12022DDDE8A7 /* Docs */,
-				81190FD515B47EAB110BEF2F /* Hangly */,
+				81190FD515B47EAB110BEF2F /* DangleBuddy */,
 				92E1111E53D1F299E2C8F330 /* Scripts */,
 				C53FC94D36F7C1F7D6FDF803 /* Tests */,
 				104BEF4B11EA0639CA188954 /* .swiftlint.yml */,
@@ -408,8 +408,8 @@
 		9F563708DEA590B64FD88511 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E628CEA2AF4309796CB46BD5 /* Hangly.app */,
-				B9F401A66E7F713F9611DB39 /* HanglyTests.xctest */,
+				E628CEA2AF4309796CB46BD5 /* DangleBuddy.app */,
+				B9F401A66E7F713F9611DB39 /* DangleBuddyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -454,11 +454,11 @@
 			children = (
 				DF7FC3656E603B36D413B962 /* AppConstants.swift */,
 				02B06518684C82BD05E71F41 /* CGPoint+Vector.swift */,
-				3B2CE7121BC04028D6B099E1 /* CGSize+Hangly.swift */,
+				3B2CE7121BC04028D6B099E1 /* CGSize+DangleBuddy.swift */,
 				8516DA4CAE24B54446057FDA /* CharmArtworkSplitter.swift */,
 				4C42B2FE9A4C59A8829A9A67 /* Comparable+Clamped.swift */,
-				3F0E73DE9A94C895EBD56964 /* Logger+Hangly.swift */,
-				BFFFD7EC212DD64E8059E1C7 /* NSScreen+Hangly.swift */,
+				3F0E73DE9A94C895EBD56964 /* Logger+DangleBuddy.swift */,
+				BFFFD7EC212DD64E8059E1C7 /* NSScreen+DangleBuddy.swift */,
 				CD124669C9D49C1656CBCBA5 /* ObservationStream.swift */,
 				9B8D4956C373EE938A2A047E /* RGBABitmap.swift */,
 				BD867762D2DC12F94077735E /* UndoStack.swift */,
@@ -472,8 +472,8 @@
 			children = (
 				4E7F11F92BFA8E572995DBFE /* AppDelegate.swift */,
 				F13E622DA99FCCEA064C80C6 /* AppEnvironment.swift */,
-				61390805420330776EA2B735 /* Hangly.entitlements */,
-				4232418120D4D4E74B7A644A /* HanglyApp.swift */,
+				61390805420330776EA2B735 /* DangleBuddy.entitlements */,
+				4232418120D4D4E74B7A644A /* DangleBuddyApp.swift */,
 				F11BA1D63F3C9F36B977F89F /* Info.plist */,
 			);
 			path = App;
@@ -560,9 +560,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8192079002081B0DB9131B93 /* Hangly */ = {
+		8192079002081B0DB9131B93 /* DangleBuddy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52F328E3B551A89BFE67A0ED /* Build configuration list for PBXNativeTarget "Hangly" */;
+			buildConfigurationList = 52F328E3B551A89BFE67A0ED /* Build configuration list for PBXNativeTarget "DangleBuddy" */;
 			buildPhases = (
 				6F157DBDCF1D4A08EC0186AD /* Sources */,
 				898A65A0CECE391C4B2F1516 /* SwiftLint */,
@@ -572,16 +572,16 @@
 			);
 			dependencies = (
 			);
-			name = Hangly;
+			name = DangleBuddy;
 			packageProductDependencies = (
 			);
-			productName = Hangly;
-			productReference = E628CEA2AF4309796CB46BD5 /* Hangly.app */;
+			productName = DangleBuddy;
+			productReference = E628CEA2AF4309796CB46BD5 /* DangleBuddy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BB61D2C436DEFF09994CC632 /* HanglyTests */ = {
+		BB61D2C436DEFF09994CC632 /* DangleBuddyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C7CD77E891BE730DB836C06 /* Build configuration list for PBXNativeTarget "HanglyTests" */;
+			buildConfigurationList = 1C7CD77E891BE730DB836C06 /* Build configuration list for PBXNativeTarget "DangleBuddyTests" */;
 			buildPhases = (
 				C4B56EE2396DD8D6496676B5 /* Sources */,
 			);
@@ -590,11 +590,11 @@
 			dependencies = (
 				415E9B44E7522C25169A92AA /* PBXTargetDependency */,
 			);
-			name = HanglyTests;
+			name = DangleBuddyTests;
 			packageProductDependencies = (
 			);
-			productName = HanglyTests;
-			productReference = B9F401A66E7F713F9611DB39 /* HanglyTests.xctest */;
+			productName = DangleBuddyTests;
+			productReference = B9F401A66E7F713F9611DB39 /* DangleBuddyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -614,7 +614,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E81AC21B86D10AD484E2C0B /* Build configuration list for PBXProject "Hangly" */;
+			buildConfigurationList = 9E81AC21B86D10AD484E2C0B /* Build configuration list for PBXProject "DangleBuddy" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -628,8 +628,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8192079002081B0DB9131B93 /* Hangly */,
-				BB61D2C436DEFF09994CC632 /* HanglyTests */,
+				8192079002081B0DB9131B93 /* DangleBuddy */,
+				BB61D2C436DEFF09994CC632 /* DangleBuddyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -682,7 +682,7 @@
 				E05EA11F124B3596BD659B9E /* AudioService.swift in Sources */,
 				3E518ECD6A82FDE53317013E /* BuiltInCharms.swift in Sources */,
 				E8BE18FD26E76DCCD9974AC7 /* CGPoint+Vector.swift in Sources */,
-				9BDE18241803D4BE511AF8FD /* CGSize+Hangly.swift in Sources */,
+				9BDE18241803D4BE511AF8FD /* CGSize+DangleBuddy.swift in Sources */,
 				70D3E1C62AEC2C3050227619 /* CameraCharm.swift in Sources */,
 				732198D7D8BF9EB5BC441B67 /* Charm.swift in Sources */,
 				FA600384E0584BF60F17C5EF /* CharmArtworkSplitter.swift in Sources */,
@@ -716,16 +716,16 @@
 				C3455491BA7D2943209F1B0E /* CustomCharmStore.swift in Sources */,
 				E6EEDD46B37830AB4AD19FC5 /* DiamondCharm.swift in Sources */,
 				06651C20B93E38A4B9BEF4F0 /* GeneralSettingsTab.swift in Sources */,
-				246353EFFEE1468435B9AB66 /* HanglyApp.swift in Sources */,
+				246353EFFEE1468435B9AB66 /* DangleBuddyApp.swift in Sources */,
 				BB0951C72C2E55B9E8AD4144 /* HeartCharm.swift in Sources */,
 				3B40272A20C4C6788CC07C96 /* LaunchAtLoginPolicy.swift in Sources */,
 				32FEB969E145C882EAE6372C /* LaunchAtLoginService.swift in Sources */,
-				66FEEB5AD4D26A6D20E2D956 /* Logger+Hangly.swift in Sources */,
+				66FEEB5AD4D26A6D20E2D956 /* Logger+DangleBuddy.swift in Sources */,
 				A2862B145C0CE52D9382147D /* MenuBarIcon.swift in Sources */,
 				9AB648351BC66E6145E97B45 /* MenuBarIconArtwork.swift in Sources */,
 				780627C6511053F2AA7B67C8 /* MenuBarView.swift in Sources */,
 				A82691615A0FAF773CE1D085 /* MenuBarViewModel.swift in Sources */,
-				AAABDFF3C08ED62AA649A95C /* NSScreen+Hangly.swift in Sources */,
+				AAABDFF3C08ED62AA649A95C /* NSScreen+DangleBuddy.swift in Sources */,
 				B162177930780A109B1B9784 /* ObservationStream.swift in Sources */,
 				7796FE21EB7F69A2735ECBB2 /* OverlayAnchor.swift in Sources */,
 				5B3B14AE173D666A42AD0840 /* OverlayPanel.swift in Sources */,
@@ -794,7 +794,7 @@
 /* Begin PBXTargetDependency section */
 		415E9B44E7522C25169A92AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8192079002081B0DB9131B93 /* Hangly */;
+			target = 8192079002081B0DB9131B93 /* DangleBuddy */;
 			targetProxy = F78D222578732A588A75E55D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -868,7 +868,7 @@
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = all;
 				STRIP_SWIFT_SYMBOLS = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = HANGLY_PRODUCTION;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DANGLEBUDDY_PRODUCTION;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_STRICT_CONCURRENCY = complete;
@@ -960,9 +960,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hangly.HanglyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danglebuddy.tests;
 				SDKROOT = macosx;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hangly.app/Contents/MacOS/Hangly";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DangleBuddy.app/Contents/MacOS/DangleBuddy";
 			};
 			name = Production;
 		};
@@ -971,16 +971,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Hangly/App/Hangly.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DangleBuddy/App/DangleBuddy.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Hangly/App/Info.plist;
+				INFOPLIST_FILE = DangleBuddy/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hangly.Hangly;
-				PRODUCT_NAME = Hangly;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danglebuddy.app;
+				PRODUCT_NAME = DangleBuddy;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -991,16 +991,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Hangly/App/Hangly.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DangleBuddy/App/DangleBuddy.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Hangly/App/Info.plist;
+				INFOPLIST_FILE = DangleBuddy/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hangly.Hangly;
-				PRODUCT_NAME = Hangly;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danglebuddy.app;
+				PRODUCT_NAME = DangleBuddy;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -1017,9 +1017,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hangly.HanglyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danglebuddy.tests;
 				SDKROOT = macosx;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hangly.app/Contents/MacOS/Hangly";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DangleBuddy.app/Contents/MacOS/DangleBuddy";
 			};
 			name = Debug;
 		};
@@ -1096,17 +1096,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Hangly/App/Hangly.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DangleBuddy/App/DangleBuddy.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Hangly/App/Info.plist;
+				INFOPLIST_FILE = DangleBuddy/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hangly.Hangly;
-				PRODUCT_NAME = Hangly;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danglebuddy.app;
+				PRODUCT_NAME = DangleBuddy;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -1123,16 +1123,16 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hangly.HanglyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danglebuddy.tests;
 				SDKROOT = macosx;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hangly.app/Contents/MacOS/Hangly";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DangleBuddy.app/Contents/MacOS/DangleBuddy";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C7CD77E891BE730DB836C06 /* Build configuration list for PBXNativeTarget "HanglyTests" */ = {
+		1C7CD77E891BE730DB836C06 /* Build configuration list for PBXNativeTarget "DangleBuddyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7ED895E589445393BB44E894 /* Debug */,
@@ -1142,7 +1142,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		52F328E3B551A89BFE67A0ED /* Build configuration list for PBXNativeTarget "Hangly" */ = {
+		52F328E3B551A89BFE67A0ED /* Build configuration list for PBXNativeTarget "DangleBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A563F4BE7BA3027AD9FD1B7C /* Debug */,
@@ -1152,7 +1152,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9E81AC21B86D10AD484E2C0B /* Build configuration list for PBXProject "Hangly" */ = {
+		9E81AC21B86D10AD484E2C0B /* Build configuration list for PBXProject "DangleBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2452A953920B230608A16067 /* Debug */,

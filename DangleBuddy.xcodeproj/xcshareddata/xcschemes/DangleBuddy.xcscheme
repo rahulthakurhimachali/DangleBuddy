@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8192079002081B0DB9131B93"
-               BuildableName = "Hangly.app"
-               BlueprintName = "Hangly"
-               ReferencedContainer = "container:Hangly.xcodeproj">
+               BuildableName = "DangleBuddy.app"
+               BlueprintName = "DangleBuddy"
+               ReferencedContainer = "container:DangleBuddy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB61D2C436DEFF09994CC632"
-               BuildableName = "HanglyTests.xctest"
-               BlueprintName = "HanglyTests"
-               ReferencedContainer = "container:Hangly.xcodeproj">
+               BuildableName = "DangleBuddyTests.xctest"
+               BlueprintName = "DangleBuddyTests"
+               ReferencedContainer = "container:DangleBuddy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8192079002081B0DB9131B93"
-            BuildableName = "Hangly.app"
-            BlueprintName = "Hangly"
-            ReferencedContainer = "container:Hangly.xcodeproj">
+            BuildableName = "DangleBuddy.app"
+            BlueprintName = "DangleBuddy"
+            ReferencedContainer = "container:DangleBuddy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -60,9 +60,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB61D2C436DEFF09994CC632"
-               BuildableName = "HanglyTests.xctest"
-               BlueprintName = "HanglyTests"
-               ReferencedContainer = "container:Hangly.xcodeproj">
+               BuildableName = "DangleBuddyTests.xctest"
+               BlueprintName = "DangleBuddyTests"
+               ReferencedContainer = "container:DangleBuddy.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -84,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8192079002081B0DB9131B93"
-            BuildableName = "Hangly.app"
-            BlueprintName = "Hangly"
-            ReferencedContainer = "container:Hangly.xcodeproj">
+            BuildableName = "DangleBuddy.app"
+            BlueprintName = "DangleBuddy"
+            ReferencedContainer = "container:DangleBuddy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -103,9 +103,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8192079002081B0DB9131B93"
-            BuildableName = "Hangly.app"
-            BlueprintName = "Hangly"
-            ReferencedContainer = "container:Hangly.xcodeproj">
+            BuildableName = "DangleBuddy.app"
+            BlueprintName = "DangleBuddy"
+            ReferencedContainer = "container:DangleBuddy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
