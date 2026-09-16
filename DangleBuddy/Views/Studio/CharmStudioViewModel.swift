@@ -1,6 +1,6 @@
 //
 //  CharmStudioViewModel.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Presentation state and the undo history for the AI Charm Studio.
 //

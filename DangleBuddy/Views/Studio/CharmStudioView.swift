@@ -1,6 +1,6 @@
 //
 //  CharmStudioView.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The AI Charm Studio window: import, cut out, shape, preview, save.
 //

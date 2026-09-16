@@ -1,6 +1,6 @@
 //
 //  CharmStudioPanels.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The source panel (what came in, how the background goes) and the properties
 //  panel (what the charm becomes).

@@ -1,6 +1,6 @@
 //
 //  CharmStudioPreviews.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The three live previews: the cut-out, the lit charm, and the charm on a rope.
 //
