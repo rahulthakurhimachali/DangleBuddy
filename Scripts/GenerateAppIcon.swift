@@ -1,6 +1,6 @@
 //
 //  GenerateAppIcon.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Slices the master icon artwork into a complete macOS AppIcon set.
 //  Run via Scripts/generate-app-icon.sh.

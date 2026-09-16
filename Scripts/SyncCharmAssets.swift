@@ -1,6 +1,6 @@
 //
 //  SyncCharmAssets.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Copies the designer's SVGs from Assets/Charms into the asset catalog as
 //  vector-preserving imagesets, one per collection charm, and reports anything

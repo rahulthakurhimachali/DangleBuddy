@@ -1,14 +1,14 @@
 #!/bin/bash
 #
-# Builds Hangly and packages it as a distributable disk image.
+# Builds DangleBuddy and packages it as a distributable disk image.
 #
 #   ./Scripts/build-dmg.sh                 # Production configuration (what ships)
 #   ./Scripts/build-dmg.sh Release         # Release, for comparison
 #
 # Outputs, both under dist/:
 #
-#   dist/Hangly.app        the built application
-#   dist/Hangly.dmg        the compressed disk image
+#   dist/DangleBuddy.app        the built application
+#   dist/DangleBuddy.dmg        the compressed disk image
 #
 # Uses only tools that ship with macOS and Xcode: xcodebuild, hdiutil, tiffutil,
 # osascript. No third-party packaging dependency.
@@ -27,8 +27,8 @@ cleanup() {
 }
 trap cleanup EXIT
 
-APP_NAME="Hangly"
-VOLUME_NAME="Hangly"
+APP_NAME="DangleBuddy"
+VOLUME_NAME="DangleBuddy"
 STAGING="$WORK/staging"
 DERIVED="$WORK/DerivedData"
 
@@ -44,7 +44,7 @@ APPLICATIONS_Y=238
 
 echo "==> Building $APP_NAME ($CONFIGURATION)"
 xcodebuild \
-  -project "$ROOT/Hangly.xcodeproj" \
+  -project "$ROOT/DangleBuddy.xcodeproj" \
   -scheme "$APP_NAME" \
   -configuration "$CONFIGURATION" \
   -derivedDataPath "$DERIVED" \
@@ -86,7 +86,7 @@ mkdir -p "$ICONSET"
 # Every size up to 512 px. A volume icon is never drawn larger than Get Info shows
 # it, and carrying the 1024 slice as well costs a megabyte of the download for a
 # resolution nothing asks a disk for.
-ICON_SOURCE="$ROOT/Hangly/Assets/Assets.xcassets/AppIcon.appiconset"
+ICON_SOURCE="$ROOT/DangleBuddy/Assets/Assets.xcassets/AppIcon.appiconset"
 if cp "$ICON_SOURCE"/icon_16x16*.png "$ICON_SOURCE"/icon_32x32*.png \
       "$ICON_SOURCE"/icon_128x128*.png "$ICON_SOURCE"/icon_256x256*.png \
       "$ICON_SOURCE"/icon_512x512.png "$ICONSET/" 2>/dev/null; then

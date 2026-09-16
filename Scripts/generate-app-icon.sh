@@ -13,4 +13,4 @@ xcrun swiftc -target arm64-apple-macos14.0 -sdk "$SDK" -swift-version 6 -O -pars
 
 "$BUILD/appicon" \
   "$ROOT/Assets/Branding/AppIcon-master.png" \
-  "$ROOT/Hangly/Assets/Assets.xcassets/AppIcon.appiconset"
+  "$ROOT/DangleBuddy/Assets/Assets.xcassets/AppIcon.appiconset"

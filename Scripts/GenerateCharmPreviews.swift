@@ -1,6 +1,6 @@
 //
 //  GenerateCharmPreviews.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Renders every built-in charm to a preview PNG in the asset catalog, and
 //  optionally a contact sheet of the whole collection. Run via
@@ -86,7 +86,7 @@ struct GenerateCharmPreviews {
                     }
                 }
             }
-            Text("Hangly")
+            Text("DangleBuddy")
                 .font(.system(size: 30, weight: .bold))
                 .foregroundStyle(.white)
                 .padding(.top, 18)

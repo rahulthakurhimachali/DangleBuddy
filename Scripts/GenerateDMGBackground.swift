@@ -1,6 +1,6 @@
 //
 //  GenerateDMGBackground.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Draws the installer window's background at 1x and 2x. Run via
 //  Scripts/build-dmg.sh, which combines the two into one Retina TIFF.
@@ -114,7 +114,7 @@ struct GenerateDMGBackground {
 
     static func drawWordmark(in context: CGContext) {
         draw(
-            "Hangly",
+            "DangleBuddy",
             at: CGPoint(x: 176, y: 58),
             font: .systemFont(ofSize: 34, weight: .semibold),
             color: NSColor(white: 0.12, alpha: 1)
@@ -152,7 +152,7 @@ struct GenerateDMGBackground {
 
     static func drawFooter(in context: CGContext) {
         draw(
-            "Drag Hangly into your Applications folder",
+            "Drag DangleBuddy into your Applications folder",
             at: CGPoint(x: 0, y: 356),
             font: .systemFont(ofSize: 12, weight: .medium),
             color: NSColor(white: 0.42, alpha: 1),
