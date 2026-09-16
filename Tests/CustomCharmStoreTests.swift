@@ -197,8 +197,8 @@ struct CharmImportTests {
         #expect(fixture.manager.isImporting == false)
     }
 
-    @Test("Deleting the selected import puts the circle back on the rope")
-    func deleteFallsBackToCircle() async throws {
+    @Test("Deleting the selected import puts Daruma back on the rope")
+    func deleteFallsBackToDaruma() async throws {
         let fixture = try makeFixture()
         defer { fixture.tearDown() }
 
@@ -210,7 +210,7 @@ struct CharmImportTests {
 
         try fixture.manager.deleteCharm(id: id)
 
-        #expect(fixture.manager.selection == .builtIn(.circle))
+        #expect(fixture.manager.selection == .builtIn(BuiltInCharms.fallbackKind))
         #expect(fixture.store.entries.isEmpty)
         #expect(fixture.manager.menuItems.count == BuiltInCharms.all.count)
     }

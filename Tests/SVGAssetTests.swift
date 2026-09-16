@@ -48,7 +48,6 @@ struct SVGAssetTests {
         // A charm with no beads hangs exactly as it is drawn.
         let himmeli = BuiltInCharms.charm(for: .himmeli)
         #expect(himmeli.hangingArtwork().beadRegions.isEmpty)
-        #expect(BuiltInCharms.charm(for: .circle).hangingArtwork().vector == nil)
     }
 
     @Test("Every built-in resolves to exactly one kind of artwork")
@@ -149,14 +148,6 @@ struct SVGAssetTests {
             #expect(height >= 80, "\(kind) hangs at only \(height) points")
             #expect(height <= 104, "\(kind) hangs at \(height) points")
         }
-
-        // The classics are bare shapes with no loop above them, so they sit a little
-        // under the collection rather than matching its bounds.
-        for charm in BuiltInCharms.all where !(charm is SVGCharm) {
-            let height = hangingHeight(charm)
-            #expect(height >= 68, "\(charm.displayName) hangs at only \(height) points")
-            #expect(height <= 104, "\(charm.displayName) hangs at \(height) points")
-        }
     }
 
     @Test("A charm and its cord fit the overlay even at full reach")
@@ -194,10 +185,10 @@ struct SVGAssetTests {
         #expect(dark.width == 96)
     }
 
-    @Test("The collection's cord is gold; the classics keep their own colours")
+    @Test("The collection's cord is gold")
     func cordTint() {
         #expect(BuiltInCharms.charm(for: .nazar).cordTint == CollectionCharmCatalog.cordTint)
-        #expect(BuiltInCharms.charm(for: .circle).cordTint == nil)
+        #expect(BuiltInCharms.all.allSatisfy { $0.cordTint == CollectionCharmCatalog.cordTint })
     }
 
     @Test("The renderer draws a vector charm with visible pixels")

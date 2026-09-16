@@ -197,10 +197,10 @@ struct CharmLibraryViewModelTests {
 
     @Test("An unrecognised favourite is dropped on its own, keeping the rest")
     func unknownFavoriteIsDropped() throws {
-        let json = #"{"favoriteCharms": ["star", "sparkle", "custom:nope"]}"#
+        let json = #"{"favoriteCharms": ["himmeli", "sparkle", "custom:nope"]}"#
         let decoded = try JSONDecoder().decode(AppSettings.self, from: Data(json.utf8))
 
-        #expect(decoded.favoriteCharms == [.builtIn(.star)])
+        #expect(decoded.favoriteCharms == [.builtIn(.himmeli)])
     }
 
     @Test("Imports appear under Yours and leave with their favourite star")
@@ -227,6 +227,6 @@ struct CharmLibraryViewModelTests {
 
         #expect(fixture.viewModel.hasCustomCharms == false)
         #expect(fixture.viewModel.favoriteCount == 0)
-        #expect(fixture.manager.selection == .builtIn(.circle))
+        #expect(fixture.manager.selection == .builtIn(BuiltInCharms.fallbackKind))
     }
 }

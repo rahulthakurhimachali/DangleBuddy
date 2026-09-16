@@ -21,11 +21,10 @@ struct CharmTests {
         #expect(BuiltInCharms.all.count == CharmKind.allCases.count)
     }
 
-    @Test("The classic charms are still present")
-    func shipsTheClassics() {
-        let classics: Set<CharmKind> = [.circle, .camera, .star, .heart, .diamond]
-        #expect(classics.isSubset(of: Set(CharmKind.allCases)))
-        #expect(CharmKind.allCases.count == 16)
+    @Test("The collection charms are all present")
+    func shipsTheCollection() {
+        #expect(CharmKind.allCases.count == 11)
+        #expect(BuiltInCharms.all.count == 11)
     }
 
     @Test("Every charm has sane physical properties")
@@ -91,14 +90,24 @@ struct CharmTests {
 
     @Test("Palette interpolation blends every tone")
     func palettesInterpolate() {
-        let circle = CircleCharm().palette
-        let heart = HeartCharm().palette
+        let start = CharmPalette(
+            primary: CharmColor(0.2, 0.3, 0.4),
+            secondary: CharmColor(0.1, 0.2, 0.3),
+            deep: CharmColor(0.0, 0.1, 0.2),
+            light: CharmColor(0.8, 0.9, 1.0)
+        )
+        let end = CharmPalette(
+            primary: CharmColor(0.4, 0.5, 0.6),
+            secondary: CharmColor(0.3, 0.4, 0.5),
+            deep: CharmColor(0.2, 0.3, 0.4),
+            light: CharmColor(1.0, 1.0, 1.0)
+        )
 
-        #expect(CharmPalette.interpolate(from: circle, to: heart, progress: 0) == circle)
-        #expect(CharmPalette.interpolate(from: circle, to: heart, progress: 1) == heart)
+        #expect(CharmPalette.interpolate(from: start, to: end, progress: 0) == start)
+        #expect(CharmPalette.interpolate(from: start, to: end, progress: 1) == end)
 
-        let middle = CharmPalette.interpolate(from: circle, to: heart, progress: 0.5)
-        #expect(abs(middle.primary.red - ((circle.primary.red + heart.primary.red) / 2)) < 1e-9)
+        let middle = CharmPalette.interpolate(from: start, to: end, progress: 0.5)
+        #expect(abs(middle.primary.red - 0.3) < 1e-9)
     }
 
     @Test("A derived palette keeps the base as primary and darkens the rest")
@@ -120,11 +129,11 @@ struct CharmTests {
 struct CharmIDTests {
     @Test("A built-in is stored as its plain kind name, unchanged from before")
     func builtInStoresAsKindName() throws {
-        let id = CharmID.builtIn(.star)
-        #expect(id.storageValue == "star")
+        let id = CharmID.builtIn(.daruma)
+        #expect(id.storageValue == "daruma")
 
         let encoded = try JSONEncoder().encode([id])
-        #expect(String(bytes: encoded, encoding: .utf8) == #"["star"]"#)
+        #expect(String(bytes: encoded, encoding: .utf8) == #"["daruma"]"#)
     }
 
     @Test("An import round-trips through its storage string")
@@ -142,8 +151,8 @@ struct CharmIDTests {
 
     @Test("A settings document from before Phase 4 still decodes")
     func legacyKindStringDecodes() throws {
-        let decoded = try JSONDecoder().decode([CharmID].self, from: Data(#"["heart"]"#.utf8))
-        #expect(decoded == [.builtIn(.heart)])
+        let decoded = try JSONDecoder().decode([CharmID].self, from: Data(#"["nazar"]"#.utf8))
+        #expect(decoded == [.builtIn(.nazar)])
     }
 
     @Test("Garbage is refused rather than guessed")
@@ -195,11 +204,11 @@ struct CharmSelectionTests {
         let fixture = try makeFixture()
         defer { fixture.tearDown() }
 
-        fixture.manager.selection = .builtIn(.star)
+        fixture.manager.selection = .builtIn(.nazar)
 
         let reloaded = SettingsStore(defaults: fixture.defaults, storageKey: "settings")
         let manager = CharmManager(settingsStore: reloaded, customStore: CustomCharmStore(directory: fixture.directory))
-        #expect(manager.selection == .builtIn(.star))
+        #expect(manager.selection == .builtIn(.nazar))
     }
 
     @Test("The menu lists every built-in first, in registry order")
@@ -227,20 +236,18 @@ struct CharmSelectionTests {
         let decoded = try JSONDecoder().decode(OverlaySettings.self, from: Data(json.utf8))
         #expect(decoded.charm == .custom(uuid))
 
-        let builtIn = try JSONDecoder().decode(OverlaySettings.self, from: Data(#"{"charm": "diamond"}"#.utf8))
-        #expect(builtIn.charm == .builtIn(.diamond))
+        let builtIn = try JSONDecoder().decode(OverlaySettings.self, from: Data(#"{"charm": "daruma"}"#.utf8))
+        #expect(builtIn.charm == .builtIn(.daruma))
     }
 
-    @Test("A selected import that no longer exists falls back to the circle")
+    @Test("A selected import that no longer exists falls back to Daruma")
     func missingImportFallsBack() throws {
         let fixture = try makeFixture()
         defer { fixture.tearDown() }
 
         fixture.manager.selection = .custom(UUID())
 
-        // The repair charm, which is deliberately the plainest one rather than
-        // whatever the shipped default happens to be.
-        #expect(fixture.manager.current.id == .builtIn(.circle))
+        #expect(fixture.manager.current.id == .builtIn(BuiltInCharms.fallbackKind))
     }
 
     @Test("At launch, a selection or favourite pointing at a missing import is repaired")
@@ -252,13 +259,13 @@ struct CharmSelectionTests {
         let store = SettingsStore(defaults: fixture.defaults, storageKey: "settings")
         store.update {
             $0.overlay.charm = .custom(ghost)
-            $0.favoriteCharms = [.custom(ghost), .builtIn(.star)]
+            $0.favoriteCharms = [.custom(ghost), .builtIn(.nazar)]
         }
 
         let manager = CharmManager(settingsStore: store, customStore: CustomCharmStore(directory: fixture.directory))
 
-        #expect(manager.selection == .builtIn(.circle))
-        #expect(store.settings.overlay.charm == .builtIn(.circle))
-        #expect(store.settings.favoriteCharms == [.builtIn(.star)])
+        #expect(manager.selection == .builtIn(BuiltInCharms.fallbackKind))
+        #expect(store.settings.overlay.charm == .builtIn(BuiltInCharms.fallbackKind))
+        #expect(store.settings.favoriteCharms == [.builtIn(.nazar)])
     }
 }

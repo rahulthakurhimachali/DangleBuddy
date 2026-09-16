@@ -77,7 +77,6 @@ struct CharmSoundTests {
         #expect(BuiltInCharms.charm(for: .horseshoe).sound == .metal)
         #expect(BuiltInCharms.charm(for: .nazar).sound == .glass)
         #expect(BuiltInCharms.charm(for: .himmeli).sound == .soft)
-        #expect(BuiltInCharms.charm(for: .star).sound == .soft)
     }
 
     @Test("Exactly one built-in charm is a bell")

@@ -78,8 +78,6 @@ struct RopeBeadTests {
 
         // A charm the artwork draws on a bare cord brings none.
         #expect(BuiltInCharms.charm(for: .himmeli).beads.isEmpty)
-        // Neither do the classics, which are geometry rather than artwork.
-        #expect(BuiltInCharms.charm(for: .circle).beads.isEmpty)
     }
 
     @Test("Beads sit on the cord, above the charm")
