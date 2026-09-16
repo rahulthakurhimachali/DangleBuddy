@@ -1,6 +1,6 @@
 //
 //  RopePoint.swift
-//  Hangly
+//  DangleBuddy
 //
 //  A single Verlet particle.
 //

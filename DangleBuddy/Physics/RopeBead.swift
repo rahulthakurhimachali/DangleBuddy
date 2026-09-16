@@ -1,6 +1,6 @@
 //
 //  RopeBead.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Beads threaded onto the cord above the charm.
 //

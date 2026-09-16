@@ -1,6 +1,6 @@
 //
 //  RopeSimulation+Drag.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Picking the charm up, moving it and letting it go.
 //

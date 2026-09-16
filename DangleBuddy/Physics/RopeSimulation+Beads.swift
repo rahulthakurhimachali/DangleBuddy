@@ -1,6 +1,6 @@
 //
 //  RopeSimulation+Beads.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The bead pass: particles that ride the cord.
 //

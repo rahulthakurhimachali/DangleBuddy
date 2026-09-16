@@ -1,6 +1,6 @@
 //
 //  RopeCurve.swift
-//  Hangly
+//  DangleBuddy
 //
 //  The drawn cord, measured by arc length.
 //

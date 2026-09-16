@@ -1,6 +1,6 @@
 //
 //  SimulationClock.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Display-synchronised tick source for the simulation.
 //

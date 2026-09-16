@@ -1,6 +1,6 @@
 //
 //  RopeConfiguration.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Tunable constants for the rope solver.
 //

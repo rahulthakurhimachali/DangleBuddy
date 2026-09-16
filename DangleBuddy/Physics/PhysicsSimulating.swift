@@ -1,6 +1,6 @@
 //
 //  PhysicsSimulating.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Phase 2 seam. No simulation is implemented in Phase 1.
 //

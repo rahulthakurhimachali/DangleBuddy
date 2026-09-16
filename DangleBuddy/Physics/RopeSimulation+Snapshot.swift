@@ -1,6 +1,6 @@
 //
 //  RopeSimulation+Snapshot.swift
-//  Hangly
+//  DangleBuddy
 //
 //  How the rope reports itself to the renderer.
 //

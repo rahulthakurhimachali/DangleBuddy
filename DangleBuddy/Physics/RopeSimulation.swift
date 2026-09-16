@@ -1,6 +1,6 @@
 //
 //  RopeSimulation.swift
-//  Hangly
+//  DangleBuddy
 //
 //  Verlet rope with distance-constraint relaxation.
 //
